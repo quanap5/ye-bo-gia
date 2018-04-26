@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@drawable/popup_accusation_areashadow"
+        n1:paddingLeft="10.0dip"
+        n1:paddingTop="3.0dip"
+        n1:paddingRight="10.0dip"
+        n1:paddingBottom="10.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content">
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="44.0dip">
+
+            <FrameLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content">
+
+                <LinearLayout
+                    n1:gravity="center_vertical"
+                    n1:background="@drawable/popup_accusation_head_areabg"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="37.0dip"
+                    n1:layout_marginTop="7.0dip">
+
+                    <ImageView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="50.0dip"
+                        n1:layout_marginRight="40.0dip"
+                        n1:src="@drawable/popup_accusation_head_img_titletext" />
+                </LinearLayout>
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:src="@drawable/popup_accusation_head_img_lightbar" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:background="#ffffffff"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <RadioGroup
+                n1:orientation="vertical"
+                n1:id="@id/msg_report_type_group"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+
+                <RadioButton
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff3a4046"
+                    n1:gravity="center_vertical"
+                    n1:id="@id/msg_report_type1"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginLeft="15.0dip"
+                    n1:layout_marginRight="26.0dip"
+                    n1:button="@null"
+                    n1:text="욕설/비방"
+                    n1:drawableRight="@drawable/select_radio_btn" />
+
+                <TextView
+                    n1:background="#ffb0b0b0"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+
+                <RadioButton
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff3a4046"
+                    n1:gravity="center_vertical"
+                    n1:id="@id/msg_report_type2"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginLeft="15.0dip"
+                    n1:layout_marginRight="26.0dip"
+                    n1:button="@null"
+                    n1:text="광고/상업성"
+                    n1:drawableRight="@drawable/select_radio_btn" />
+
+                <TextView
+                    n1:background="#ffb0b0b0"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+
+                <RadioButton
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff3a4046"
+                    n1:gravity="center_vertical"
+                    n1:id="@id/msg_report_type3"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginLeft="15.0dip"
+                    n1:layout_marginRight="26.0dip"
+                    n1:button="@null"
+                    n1:text="음란성"
+                    n1:drawableRight="@drawable/select_radio_btn" />
+
+                <TextView
+                    n1:background="#ffb0b0b0"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+
+                <RadioButton
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff3a4046"
+                    n1:gravity="center_vertical"
+                    n1:id="@id/msg_report_type4"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginLeft="15.0dip"
+                    n1:layout_marginRight="26.0dip"
+                    n1:button="@null"
+                    n1:text="SNS 아이디 요구 (카톡)"
+                    n1:drawableRight="@drawable/select_radio_btn" />
+
+                <TextView
+                    n1:background="#ffb0b0b0"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+
+                <RadioButton
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff3a4046"
+                    n1:gravity="center_vertical"
+                    n1:id="@id/msg_report_type5"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginLeft="15.0dip"
+                    n1:layout_marginRight="26.0dip"
+                    n1:button="@null"
+                    n1:text="기타"
+                    n1:drawableRight="@drawable/select_radio_btn" />
+
+                <TextView
+                    n1:background="#ffb0b0b0"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:background="#ffefefef"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <TextView
+                n1:textSize="13.0dip"
+                n1:textColor="#ff70777f"
+                n1:gravity="center_vertical"
+                n1:id="@id/msg_report_msg"
+                n1:padding="14.0dip"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:text="대화내용대화내용1\n대화내용2\n대화내용3\n대화내용4\n대화내용5\n대화내용6"
+                n1:maxLines="3"
+                n1:lineSpacingMultiplier="1.2" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/msg_report_image"
+                n1:padding="14.0dip"
+                n1:layout_width="200.0dip"
+                n1:layout_height="200.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="13.0dip"
+                n1:textStyle="bold"
+                n1:gravity="center"
+                n1:id="@id/msg_report_cancel"
+                n1:padding="9.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="41.0dip"
+                n1:text=" 취 소 "
+                n1:layout_weight="0.5"
+                n2:txt_bg_normal="@drawable/popup_accusation_btn_cancel_normal"
+                n2:txt_bg_pressed="@drawable/popup_accusation_btn_cancel_press"
+                n2:txt_color_default="#fff7f7f7"
+                n2:txt_color_pressed="#ffd8d8d8"
+                xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+            <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="13.0dip"
+                n1:textStyle="bold"
+                n1:gravity="center"
+                n1:id="@id/msg_report_send"
+                n1:padding="9.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="41.0dip"
+                n1:text="신고하기"
+                n1:layout_weight="0.5"
+                n3:txt_bg_normal="@drawable/popup_accusation_btn_accusation_normal"
+                n3:txt_bg_pressed="@drawable/popup_accusation_btn_accusation_press"
+                n3:txt_color_default="#fff7f7f7"
+                n3:txt_color_pressed="#ffd8d8d8"
+                xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

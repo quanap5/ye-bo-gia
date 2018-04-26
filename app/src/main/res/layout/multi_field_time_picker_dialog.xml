@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="start"
+    n1:layout_gravity="center_vertical"
+    n1:orientation="vertical"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        n1:textSize="20.0sp"
+        n1:textColor="#ff33b5e5"
+        n1:gravity="start"
+        n1:paddingLeft="5.0dip"
+        n1:paddingTop="5.0dip"
+        n1:paddingRight="5.0dip"
+        n1:paddingBottom="5.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/time_picker_dialog_title" />
+
+    <View
+        n1:background="#ff33b5e5"
+        n1:paddingTop="5.0dip"
+        n1:paddingBottom="5.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="2.0dip" />
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:layout_gravity="center_horizontal"
+        n1:orientation="horizontal"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content">
+
+        <NumberPicker
+            n1:textSize="12.0sp"
+            n1:id="@id/hour"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="0.2"
+            n1:contentDescription="@string/accessibility_time_picker_hour" />
+
+        <TextView
+            n1:textSize="12.0sp"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/time_picker_dialog_hour_minute_separator" />
+
+        <NumberPicker
+            n1:textSize="12.0sp"
+            n1:id="@id/minute"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="0.2"
+            n1:contentDescription="@string/accessibility_time_picker_minute" />
+
+        <TextView
+            n1:textSize="12.0sp"
+            n1:id="@id/second_colon"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/time_picker_dialog_minute_second_separator" />
+
+        <NumberPicker
+            n1:textSize="12.0sp"
+            n1:id="@id/second"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="0.2"
+            n1:contentDescription="@string/accessibility_time_picker_second" />
+
+        <TextView
+            n1:textSize="12.0sp"
+            n1:id="@id/second_dot"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/time_picker_dialog_second_subsecond_separator" />
+
+        <NumberPicker
+            n1:textSize="12.0sp"
+            n1:id="@id/milli"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="0.2"
+            n1:contentDescription="@string/accessibility_time_picker_milli" />
+
+        <NumberPicker
+            n1:textSize="12.0sp"
+            n1:id="@id/ampm"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="0.2"
+            n1:contentDescription="@string/accessibility_time_picker_ampm" />
+    </LinearLayout>
+</LinearLayout>

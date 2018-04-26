@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center_vertical"
+    n1:orientation="vertical"
+    n1:background="#ffffffff"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="vertical"
+        n1:id="@id/linearLayout1"
+        n1:layout_width="40.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginLeft="10.0dip"
+        n1:layout_alignParentLeft="true">
+
+        <ImageView
+            n1:layout_width="40.0dip"
+            n1:layout_height="40.0dip"
+            n1:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center|right"
+        n1:orientation="vertical"
+        n1:id="@id/mm"
+        n1:layout_width="80.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentRight="true">
+
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:padding="0.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="4.0dip">
+
+            <TextView
+                n1:textSize="14.0dip"
+                n1:textColor="#ff8d9ca3"
+                n1:id="@id/time"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="오전 10:16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="vertical"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginLeft="20.0dip"
+        n1:layout_toLeftOf="@id/mm"
+        n1:layout_toRightOf="@id/linearLayout1">
+
+        <TextView
+            n1:textSize="17.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff8d695a"
+            n1:id="@id/ptrId"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="여보야" />
+
+        <TextView
+            n1:textColor="#ff000000"
+            n1:ellipsize="end"
+            n1:id="@id/title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="XXX님이 쪽지를 보내셨습니다.\n확인해주세요"
+            n1:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

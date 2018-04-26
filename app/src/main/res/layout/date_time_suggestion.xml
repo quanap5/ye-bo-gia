@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:id="@id/date_time_suggestion"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:minHeight="44.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        n1:textSize="18.0sp"
+        n1:ellipsize="end"
+        n1:id="@id/date_time_suggestion_value"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="10.0dip"
+        n1:layout_marginRight="10.0dip"
+        n1:singleLine="true" />
+
+    <TextView
+        n1:textSize="18.0sp"
+        n1:textColor="#ff8b8b8b"
+        n1:ellipsize="end"
+        n1:gravity="end"
+        n1:id="@id/date_time_suggestion_label"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="10.0dip"
+        n1:singleLine="true"
+        n1:layout_weight="1.0" />
+</LinearLayout>

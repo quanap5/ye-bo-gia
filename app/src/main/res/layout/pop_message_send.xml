@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:background="@drawable/msg_box_bg"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <TextView
+            n1:textSize="16.0dip"
+            n1:textColor="#ffffffff"
+            n1:id="@id/pop_sendmsg_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="연락하기" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <TextView
+            n1:textSize="15.0dip"
+            n1:textColor="#ff111111"
+            n1:id="@id/pop_sendmsg_to"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="to" />
+
+        <TextView
+            n1:textSize="14.0dip"
+            n1:textColor="#ff2891b6"
+            n1:id="@id/pop_sendmsg_who"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="김프로님(남/23세 11km)" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <EditText
+            n1:textSize="14.0dip"
+            n1:textColor="#ff2891b6"
+            n1:id="@id/pop_sendmsg_msg"
+            n1:padding="9.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxLength="5" />
+    </LinearLayout>
+</LinearLayout>

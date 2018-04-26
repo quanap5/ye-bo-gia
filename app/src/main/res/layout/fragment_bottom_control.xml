@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:id="@id/fragment_bottom_control"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:background="@drawable/fragment_bottom_bg"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true">
+
+        <FrameLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/layout_bottom_control_btn_chat"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_bottom_menu_chat_selector" />
+
+            <ImageView
+                n1:layout_gravity="right"
+                n1:id="@id/layout_bottom_control_btn_chat_badge"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="13.0dip"
+                n1:src="@drawable/fragment_bottom_menu_chat_badge" />
+        </FrameLayout>
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <CheckBox
+                n1:id="@id/layout_bottom_control_btn_swap_camera"
+                n1:background="@drawable/fragment_bottom_menu_camera_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:button="@null"
+                n1:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageView
+            n1:id="@id/layout_bottom_control_btn_end_call"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/fragment_bottom_menu_endcall_selector"
+            n1:layout_weight="1.5" />
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <CheckBox
+                n1:id="@id/layout_bottom_control_btn_mic"
+                n1:background="@drawable/fragment_bottom_menu_mic_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:button="@null"
+                n1:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <CheckBox
+                n1:id="@id/layout_bottom_control_btn_speaker"
+                n1:background="@drawable/fragment_bottom_menu_speaker_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:button="@null"
+                n1:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

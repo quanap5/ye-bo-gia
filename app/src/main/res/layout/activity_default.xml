@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        n1:id="@id/image_grid"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentLeft="true"
+        n1:layout_marginBottom="40.0dip"
+        n1:background="#ff181819"
+        n1:visibility="visible" />
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="40.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentLeft="true"
+        n1:background="#ff181819"
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:visibility="visible">
+
+        <Button
+            n1:id="@id/def_cancel"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_alignParentRight="true"
+            n1:layout_centerVertical="true"
+            n1:layout_weight="0.5"
+            n1:background="@drawable/action_btn_cancel"
+            n1:minHeight="1.0dip"
+            n1:minWidth="1.0dip"
+            n1:text="Cancel"
+            n1:textColor="@color/default_text_color"
+            n1:textSize="14.0sp" />
+
+        <Button
+            n1:id="@id/def_commit"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="0.5"
+            n1:background="@drawable/action_btn_ok"
+            n1:minHeight="1.0dip"
+            n1:minWidth="1.0dip"
+            n1:text="Sign in"
+            n1:textColor="@color/default_text_color"
+            n1:textSize="14.0sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:background="#cc1e1a1a"
+    n1:padding="15.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:background="@drawable/bg_wrap2"
+        n1:paddingTop="20.0dip"
+        n1:paddingBottom="20.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <ImageView
+            n1:gravity="center"
+            n1:id="@id/pop_inapp_result_item_icon"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/img_msg" />
+
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:id="@id/pop_inapp_result_item_layer1"
+            n1:paddingTop="20.0dip"
+            n1:paddingBottom="20.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <TextView
+                n1:textSize="17.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff4753ab"
+                n1:id="@id/pop_inapp_result_item_count1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+
+            <TextView
+                n1:textSize="14.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff101010"
+                n1:id="@id/pop_inapp_result_item_money1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip"
+                n1:text="구매가 완료되었습니다." />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:id="@id/op_inapp_result_coin_layer"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <LinearLayout
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal"
+                n1:id="@id/pop_inapp_result_mycoin_layer"
+                n1:background="#ffe1e7f1"
+                n1:layout_width="fill_parent"
+                n1:layout_height="31.0dip"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginTop="7.0dip"
+                n1:layout_marginRight="15.0dip">
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="left"
+                    n1:id="@id/pop_inapp_result_mycoin_desc"
+                    n1:paddingLeft="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="결제코인"
+                    n1:layout_weight="1.0" />
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="right"
+                    n1:id="@id/pop_inapp_result_mycoin_count"
+                    n1:paddingLeft="40.0dip"
+                    n1:paddingRight="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="0"
+                    n1:drawableRight="@drawable/img_coin"
+                    n1:drawablePadding="5.0dip"
+                    n1:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal"
+                n1:id="@id/pop_inapp_result_item_layer"
+                n1:background="#ffe1e7f1"
+                n1:layout_width="fill_parent"
+                n1:layout_height="31.0dip"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginRight="15.0dip">
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="left"
+                    n1:id="@id/pop_inapp_result_item_desc"
+                    n1:paddingLeft="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="메시지 이용권구매"
+                    n1:layout_weight="1.0" />
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="right"
+                    n1:id="@id/pop_inapp_result_item_count"
+                    n1:paddingLeft="40.0dip"
+                    n1:paddingRight="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="0"
+                    n1:drawableRight="@drawable/img_coin"
+                    n1:drawablePadding="5.0dip"
+                    n1:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal"
+                n1:id="@id/pop_inapp_result_after_layer"
+                n1:background="#ffe1e7f1"
+                n1:layout_width="fill_parent"
+                n1:layout_height="31.0dip"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginRight="15.0dip">
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="left"
+                    n1:id="@id/pop_inapp_result_after_desc"
+                    n1:paddingLeft="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="잔여코인"
+                    n1:layout_weight="1.0" />
+
+                <TextView
+                    n1:textSize="15.0dip"
+                    n1:textColor="#ff383838"
+                    n1:gravity="right"
+                    n1:id="@id/pop_inapp_result_after_count"
+                    n1:paddingLeft="40.0dip"
+                    n1:paddingRight="10.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="0"
+                    n1:drawableRight="@drawable/img_coin"
+                    n1:drawablePadding="5.0dip"
+                    n1:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:id="@id/pop_inapp_result_item_selet_layer"
+            n1:paddingTop="25.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff4753ab"
+                n1:gravity="center"
+                n1:id="@id/pop_inapp_result_select_item"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff4753ab"
+                n1:gravity="center"
+                n1:id="@id/pop_inapp_result_select_desc"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/pop_inapp_result_item_buy_layer"
+        n1:background="@drawable/bg_bottom3"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip">
+
+        <TextView
+            n1:textSize="18.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ffffffff"
+            n1:gravity="center"
+            n1:id="@id/pop_inapp_result_item_buy"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:text="확인" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="280.0dip"
+        n1:layout_height="wrap_content">
+
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:background="@drawable/popup_signal_head_areabg"
+            n1:layout_width="fill_parent"
+            n1:layout_height="44.0dip">
+
+            <TextView
+                n1:textSize="16.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff81513c"
+                n1:id="@id/comm_msg_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="알 림" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:background="#ffffffff"
+            n1:paddingBottom="16.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <ImageView
+                n1:id="@id/comm_msg_icon"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip"
+                n1:src="@drawable/popup_signal_tell_ico_exclamationmark" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff3a4046"
+                n1:gravity="center_horizontal"
+                n1:id="@id/comm_msg_comment"
+                n1:paddingLeft="10.0dip"
+                n1:paddingRight="10.0dip"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="5.0dip"
+                n1:text="내용을 입력해 주세요"
+                n1:lineSpacingMultiplier="1.2" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff5eaa41"
+                n1:gravity="center_horizontal"
+                n1:id="@id/comm_msg_email"
+                n1:paddingLeft="10.0dip"
+                n1:paddingRight="10.0dip"
+                n1:visibility="gone"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="5.0dip"
+                n1:text=""
+                n1:maxLines="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:gravity="center"
+                n1:id="@id/comm_msg_cancel"
+                n1:padding="9.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="41.0dip"
+                n1:text=" 취 소 "
+                n1:layout_weight="0.5"
+                n2:txt_bg_normal="@drawable/popup_signal_btn_twobtn_left_normal"
+                n2:txt_bg_pressed="@drawable/popup_signal_btn_twobtn_left_press"
+                n2:txt_color_default="#ff3a4046"
+                xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+            <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:gravity="center"
+                n1:id="@id/comm_msg_send"
+                n1:padding="9.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="41.0dip"
+                n1:text="신고하기"
+                n1:layout_weight="0.5"
+                n3:txt_bg_normal="@drawable/popup_signal_btn_twobtn_right_normal"
+                n3:txt_bg_pressed="@drawable/popup_signal_btn_twobtn_right_press"
+                n3:txt_color_default="#ff3a4046"
+                xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

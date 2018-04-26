@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:background="#cc1e1a1a"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:padding="6.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:background="@drawable/chat_matchmaking_titbar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="41.0dip">
+
+            <TextView
+                n1:textSize="17.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:id="@id/comm_msg_title"
+                n1:paddingLeft="18.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="중매회원 소개"
+                n1:layout_weight="1.0" />
+
+            <TextView
+                n1:textSize="14.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:id="@id/pop_brokers_ok"
+                n1:background="@drawable/chat_matchmaking_btn_confirm"
+                n1:padding="5.0dip"
+                n1:layout_width="54.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="6.0dip"
+                n1:layout_marginRight="8.0dip"
+                n1:layout_marginBottom="6.0dip"
+                n1:text="확인"
+                n1:drawableLeft="@drawable/chat_check_in_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:background="#ffffffff"
+            n1:layout_width="fill_parent"
+            n1:layout_height="34.0dip">
+
+            <TextView
+                n1:textSize="14.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff727272"
+                n1:id="@id/pop_brokers_total1"
+                n1:paddingLeft="18.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="등록중인 중매회원 " />
+
+            <TextView
+                n1:textSize="18.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff715247"
+                n1:id="@id/pop_brokers_total2"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="0" />
+
+            <TextView
+                n1:textSize="12.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff727272"
+                n1:id="@id/pop_brokers_total3"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="2.0dip"
+                n1:text="명" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:background="#ff8d695a"
+            n1:layout_width="fill_parent"
+            n1:layout_height="2.0dip" />
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:background="@drawable/chat_matchmaking_listarea"
+            n1:layout_width="fill_parent"
+            n1:layout_height="287.0dip"
+            n1:layout_marginTop="2.0dip"
+            n1:layout_marginBottom="5.0dip">
+
+            <ListView
+                n1:id="@id/pop_brokers_list"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

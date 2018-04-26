@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:id="@id/fragment_top_control"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        n1:id="@id/layout_top_control"
+        n1:layout_width="fill_parent"
+        n1:layout_height="80.0dip"
+        n1:layout_alignParentTop="true"
+        n1:layout_centerHorizontal="true">
+
+        <TextView
+            n1:textSize="20.0sp"
+            n1:textStyle="bold"
+            n1:textColor="#ffff0000"
+            n1:gravity="center"
+            n1:id="@id/layout_top_control_text_timer"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="10.0dip"
+            n1:text="00 : 00 : 00"
+            n1:layout_centerHorizontal="true" />
+
+        <ImageView
+            n1:id="@id/layout_top_control_btn_floating"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="15.0dip"
+            n1:src="@drawable/fragment_top_floating_selector"
+            n1:layout_alignTop="@id/layout_top_control_text_timer"
+            n1:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            n1:id="@id/layout_top_control_reward"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_below="@id/layout_top_control_text_timer"
+            n1:layout_alignLeft="@id/layout_top_control_text_timer">
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffa1ff8b"
+                n1:id="@id/layout_top_control_reward_text1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="리  워  드 : " />
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffebff61"
+                n1:id="@id/layout_top_control_reward_text2"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="100"
+                n1:layout_toRightOf="@id/layout_top_control_reward_text1" />
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffebff61"
+                n1:id="@id/layout_top_control_reward_text3"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text=" "
+                n1:layout_toRightOf="@id/layout_top_control_reward_text2" />
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffa1ff8b"
+                n1:id="@id/layout_top_control_reward_text4"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="선물보석 : "
+                n1:layout_below="@id/layout_top_control_reward_text1" />
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffebff61"
+                n1:id="@id/layout_top_control_reward_text5"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="100"
+                n1:layout_toRightOf="@id/layout_top_control_reward_text4"
+                n1:layout_alignTop="@id/layout_top_control_reward_text4" />
+
+            <TextView
+                n1:textSize="17.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffebff61"
+                n1:id="@id/layout_top_control_reward_text6"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text=" "
+                n1:layout_toRightOf="@id/layout_top_control_reward_text5"
+                n1:layout_alignTop="@id/layout_top_control_reward_text5" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

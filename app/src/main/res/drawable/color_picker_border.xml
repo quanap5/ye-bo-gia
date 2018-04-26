@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape n1:shape="rectangle"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <stroke
+        n1:width="1.0px"
+        n1:color="@color/color_picker_border_color" />
+    <solid n1:color="@color/color_picker_background_color" />
+</shape>

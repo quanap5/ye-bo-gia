@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        n1:id="@id/send_my_id"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:hint="@string/myMemNo" />
+
+    <EditText
+        n1:id="@id/send_your_id"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:hint="@string/youMemNo" />
+
+    <EditText
+        n1:id="@id/send_server_addr"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/testSvrAddr"
+        n1:hint="@string/serverAddr" />
+
+    <Button
+        n1:id="@id/send_ok"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/btnCall" />
+
+    <EditText
+        n1:id="@id/recv_my_id"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="50.0dip"
+        n1:hint="@string/myMemNo" />
+
+    <EditText
+        n1:id="@id/recv_your_id"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:hint="@string/youMemNo" />
+
+    <EditText
+        n1:id="@id/recv_server_addr"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/testSvrAddr"
+        n1:hint="@string/serverAddr" />
+
+    <Button
+        n1:id="@id/recv_ok"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/btnCall" />
+</LinearLayout>

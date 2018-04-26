@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@drawable/popup_bringphoto_areashadow"
+        n1:padding="12.0dip"
+        n1:layout_width="300.0dip"
+        n1:layout_height="wrap_content">
+
+        <FrameLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:background="@drawable/popup_bringphoto_head_areabg"
+            n1:layout_width="fill_parent"
+            n1:layout_height="64.0dip">
+
+            <ImageView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:src="@drawable/popup_bringphoto_head_img_pattern" />
+
+            <LinearLayout
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="10.0dip"
+                    n1:src="@drawable/popup_bringphoto_head_img_bell" />
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="5.0dip"
+                    n1:layout_marginRight="20.0dip"
+                    n1:src="@drawable/popup_bringphoto_head_img_guidetext" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="17.0dip"
+            n1:textStyle="bold"
+            n1:gravity="center_vertical"
+            n1:id="@id/msg_imgselect_album"
+            n1:paddingLeft="18.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="앨범에서 가져오기"
+            n1:drawablePadding="10.0dip"
+            n2:txt_bg_normal="@drawable/popup_bringphoto_list_bg_type1_normal"
+            n2:txt_bg_pressed="@drawable/popup_bringphoto_list_bg_type1_press"
+            n2:txt_color_default="#ff3a4046"
+            n2:txt_icon_normal="@drawable/popup_bringphoto_list_ico_album"
+            n2:txt_icon_position="0"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+        <TextView
+            n1:background="#ffa0a0a0"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="17.0dip"
+            n1:textStyle="bold"
+            n1:gravity="center_vertical"
+            n1:id="@id/msg_imgselect_camera"
+            n1:paddingLeft="18.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="카메라 촬영하기"
+            n1:drawablePadding="10.0dip"
+            n3:txt_bg_normal="@drawable/popup_bringphoto_list_bg_type1_normal"
+            n3:txt_bg_pressed="@drawable/popup_bringphoto_list_bg_type1_press"
+            n3:txt_color_default="#ff3a4046"
+            n3:txt_icon_normal="@drawable/popup_bringphoto_list_ico_camera"
+            n3:txt_icon_position="0"
+            xmlns:n3="http://schemas.android.com/apk/res-auto" />
+
+        <TextView
+            n1:background="#ffa0a0a0"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorTextButton n1:textSize="17.0dip"
+            n1:textStyle="bold"
+            n1:gravity="center_vertical"
+            n1:id="@id/msg_imgselect_close"
+            n1:paddingLeft="18.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="닫기"
+            n1:drawablePadding="10.0dip"
+            n4:txt_bg_normal="@drawable/popup_bringphoto_list_bg_type2_normal"
+            n4:txt_bg_pressed="@drawable/popup_bringphoto_list_bg_type2_press"
+            n4:txt_color_default="#ff3a4046"
+            n4:txt_icon_normal="@drawable/popup_bringphoto_list_ico_close"
+            n4:txt_icon_position="0"
+            xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

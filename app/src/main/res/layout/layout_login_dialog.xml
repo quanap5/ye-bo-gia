@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        n1:textSize="26.0sp"
+        n1:textColor="@android:color/white"
+        n1:gravity="center"
+        n1:id="@id/login_title_text"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="25.0dip"
+        n1:text="@string/log_in_text" />
+
+    <ListView
+        n1:id="@id/login_list_view"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:divider="@android:color/transparent"
+        n1:dividerHeight="10.0sp" />
+
+    <RelativeLayout
+        n1:id="@id/login_close_layout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="50.0dip">
+
+        <Button
+            n1:id="@id/login_close_button"
+            n1:background="@drawable/btn_x"
+            n1:layout_width="35.0dip"
+            n1:layout_height="35.0dip"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

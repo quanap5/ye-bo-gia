@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:padding="15.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <org.chromium.ui.ColorPickerAdvanced
+            n1:id="@id/color_picker_advanced"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+    </ScrollView>
+
+    <org.chromium.ui.ColorPickerSimple
+        n1:id="@id/color_picker_simple"
+        n1:background="@drawable/color_picker_border"
+        n1:paddingLeft="1.0px"
+        n1:paddingTop="1.0px"
+        n1:paddingRight="1.0px"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:divider="@color/color_picker_border_color"
+        n1:dividerHeight="1.0px" />
+
+    <FrameLayout
+        n1:id="@id/more_colors_button_border"
+        n1:background="@drawable/color_picker_border"
+        n1:padding="1.0px"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <org.chromium.ui.ColorPickerMoreButton
+            n1:textAppearance="?android:textAppearanceSmall"
+            n1:id="@id/more_colors_button"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:minHeight="48.0dip"
+            n1:text="@string/color_picker_button_more"
+            style="?android:buttonBarButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

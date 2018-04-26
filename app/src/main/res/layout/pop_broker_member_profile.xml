@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:padding="12.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:background="@drawable/miniprofile_box_bar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="41.0dip">
+
+            <TextView
+                n1:textSize="18.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:gravity="center"
+                n1:id="@id/pop_broker_mempro_title"
+                n1:paddingLeft="50.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="@string/miniprofile_title"
+                n1:layout_weight="1.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffd9caca"
+                n1:id="@id/pop_broker_mempro_close"
+                n1:background="@drawable/miniprofile_btn_close"
+                n1:paddingLeft="15.0dip"
+                n1:paddingTop="5.0dip"
+                n1:paddingRight="15.0dip"
+                n1:paddingBottom="5.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="5.0dip"
+                n1:text="@string/common_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:background="@drawable/miniprofile_box_infoarea"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <LinearLayout
+                n1:orientation="horizontal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="8.0dip">
+
+                <com.jhproject.library.polygonimageview.PolygonImageView n1:layout_gravity="center"
+                    n1:id="@id/pop_broker_mempro_picture"
+                    n1:layout_width="80.0dip"
+                    n1:layout_height="80.0dip"
+                    n1:layout_marginLeft="9.0dip"
+                    n1:layout_marginRight="7.0dip"
+                    n1:src="@drawable/miniprofile_avatar_default_male"
+                    n2:poly_border="true"
+                    n2:poly_border_color="#ff949494"
+                    n2:poly_border_width="1.0dip"
+                    n2:poly_corner_radius="25.0"
+                    n2:poly_rotation_angle="0.0"
+                    n2:poly_shadow="false"
+                    n2:poly_shadow_color="#ffff0011"
+                    n2:poly_vertices="0"
+                    xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+                <LinearLayout
+                    n1:orientation="vertical"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content">
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginBottom="10.0dip">
+
+                        <TextView
+                            n1:textSize="18.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff19a1d1"
+                            n1:id="@id/pop_broker_mempro_nickname"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:text="남자 8호" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:id="@id/pop_broker_mempro_info1"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="4.0dip">
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info1_1"
+                            n1:layout_width="119.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ이름 서OO"
+                            n1:layout_weight="50.0" />
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info1_2"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="122.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ성별 남"
+                            n1:layout_weight="50.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:id="@id/pop_broker_mempro_info2"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="4.0dip">
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info2_1"
+                            n1:layout_width="119.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ이름 서OO"
+                            n1:layout_weight="50.0" />
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info2_2"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="122.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ성별 남"
+                            n1:layout_weight="50.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:id="@id/pop_broker_mempro_info3"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="4.0dip">
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info3_1"
+                            n1:layout_width="119.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ이름 서OO"
+                            n1:layout_weight="50.0" />
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info3_2"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="122.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ성별 남"
+                            n1:layout_weight="50.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:id="@id/pop_broker_mempro_info4"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="4.0dip">
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info4_1"
+                            n1:layout_width="119.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ만남유형 결혼"
+                            n1:layout_weight="50.0" />
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info4_2"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="122.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ직업 금융>회사"
+                            n1:layout_weight="50.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="horizontal"
+                        n1:id="@id/pop_broker_mempro_info5"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="4.0dip">
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info5_1"
+                            n1:layout_width="119.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ연봉 7000만원대"
+                            n1:layout_weight="50.0" />
+
+                        <TextView
+                            n1:id="@id/pop_broker_mempro_info5_2"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="122.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:text="ㆍ학력 대학(4년)졸"
+                            n1:layout_weight="50.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:orientation="horizontal"
+                n1:background="@drawable/miniprofile_box_msg_innerbox"
+                n1:padding="5.0dip"
+                n1:layout_width="fill_parent"
+                n1:layout_height="80.0dip"
+                n1:layout_margin="8.0dip">
+
+                <ScrollView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent">
+
+                    <TextView
+                        n1:textSize="12.0dip"
+                        n1:textStyle="bold"
+                        n1:textColor="#ff727272"
+                        n1:id="@id/pop_broker_mempro_comment"
+                        n1:padding="10.0dip"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:text="안녕하세요\n기다리고 있어요" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

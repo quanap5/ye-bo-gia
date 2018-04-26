@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:background="#ffffffff"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/msg_adapter_unread_layer"
+        n1:background="#fffff7e7"
+        n1:layout_width="fill_parent"
+        n1:layout_height="23.0dip"
+        n1:layout_marginTop="7.0dip">
+
+        <TextView
+            n1:textSize="13.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff4e4e4e"
+            n1:gravity="center"
+            n1:id="@id/msg_adapter_unread_cmt"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="20.0dip"
+            n1:text="@string/unread_line"
+            n1:layout_weight="1.0" />
+
+        <ImageView
+            n1:paddingRight="13.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ico_msg_here"
+            n1:contentDescription="@string/desc_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/msg_adapter_day_layer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="19.0dip"
+        n1:layout_marginLeft="9.0dip"
+        n1:layout_marginTop="7.0dip"
+        n1:layout_marginRight="9.0dip">
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/chat_img_pattern1_left"
+            n1:contentDescription="@string/desc_image" />
+
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:background="@drawable/chat_img_pattern1_betweenline"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="0.5"
+            n1:contentDescription="@string/desc_image" />
+
+        <TextView
+            n1:textSize="17.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff50342a"
+            n1:gravity="center_vertical"
+            n1:id="@id/msg_adapter_day_day"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="6.0dip"
+            n1:layout_marginRight="6.0dip"
+            n1:text="@string/write_date" />
+
+        <ImageView
+            n1:background="@drawable/chat_img_pattern1_betweenline"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="0.5"
+            n1:contentDescription="@string/desc_image" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/chat_img_pattern1_right"
+            n1:contentDescription="@string/desc_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_gravity="left"
+        n1:orientation="vertical"
+        n1:id="@id/msg_adapter_you_layer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="17.0dip"
+        n1:layout_marginTop="7.0dip"
+        n1:layout_marginRight="30.0dip">
+
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <LinearLayout
+                n1:gravity="left"
+                n1:orientation="vertical"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content">
+
+                <LinearLayout
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="43.0dip"
+                    n1:layout_marginBottom="3.0dip">
+
+                    <TextView
+                        n1:textSize="13.0dip"
+                        n1:textStyle="bold"
+                        n1:textColor="#ff757984"
+                        n1:id="@id/msg_adapter_you_nickname"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:text="닉네임(여/나이/지역)" />
+
+                    <ImageView
+                        n1:id="@id/msg_adapter_you_report"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:src="@drawable/chat_ico_redlight"
+                        n1:contentDescription="@string/desc_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:orientation="horizontal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content">
+
+                    <LinearLayout
+                        n1:orientation="vertical"
+                        n1:background="@drawable/chat_bubble_you"
+                        n1:paddingLeft="28.0dip"
+                        n1:paddingTop="7.0dip"
+                        n1:paddingRight="7.0dip"
+                        n1:paddingBottom="7.0dip"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="15.0dip"
+                        n1:layout_weight="1.0">
+
+                        <com.yeoboya.com.yeoboya.util.CustomImageView n1:id="@id/msg_adapter_you_image"
+                            n1:visibility="visible"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:src="@drawable/default_image2"
+                            n1:scaleType="fitCenter"
+                            n1:adjustViewBounds="true"
+                            n1:contentDescription="@string/desc_image"
+                            n2:img_max_width="180.0dip"
+                            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+                        <TextView
+                            n1:textSize="14.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff383a4b"
+                            n1:id="@id/msg_adapter_you_msg"
+                            n1:visibility="visible"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginLeft="10.0dip"
+                            n1:text="내용 "
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <LinearLayout
+                            n1:orientation="horizontal"
+                            n1:id="@id/msg_adapter_you_certify"
+                            n1:visibility="visible"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content">
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_you_married"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="혼인관계증명"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_you_married_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:layout_marginRight="5.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_you_salary"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="연봉"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_you_salary_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:layout_marginRight="5.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_you_career"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="학력"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_you_career_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:gravity="bottom"
+                        n1:orientation="vertical"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="fill_parent">
+
+                        <TextView
+                            n1:textSize="14.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ffc84463"
+                            n1:id="@id/msg_adapter_you_count"
+                            n1:visibility="gone"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginLeft="5.0dip"
+                            n1:text="1" />
+
+                        <LinearLayout
+                            n1:gravity="center_vertical"
+                            n1:orientation="horizontal"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginLeft="5.0dip">
+
+                            <ImageView
+                                n1:id="@id/msg_adapter_you_time"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:src="@drawable/chat_ico_clock"
+                                n1:contentDescription="@string/desc_image" />
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff818181"
+                                n1:id="@id/msg_adapter_you_time2"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="오후 01:05" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/msg_adapter_you_picture"
+                n1:layout_width="38.0dip"
+                n1:layout_height="38.0dip"
+                n1:src="@drawable/chat_avatar_default_female"
+                n3:poly_border="false"
+                n3:poly_border_color="#ffdce2f2"
+                n3:poly_border_width="5.0dip"
+                n3:poly_corner_radius="25.0"
+                n3:poly_rotation_angle="0.0"
+                n3:poly_shadow="false"
+                n3:poly_shadow_color="#ffff0011"
+                n3:poly_vertices="0"
+                xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="right"
+        n1:layout_gravity="right"
+        n1:orientation="vertical"
+        n1:id="@id/msg_adapter_me_layer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="30.0dip"
+        n1:layout_marginTop="7.0dip"
+        n1:layout_marginRight="17.0dip">
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <ImageView
+                n1:layout_gravity="bottom"
+                n1:id="@id/msg_adapter_me_resend"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/yeoboya_chat_btn_resend"
+                n1:contentDescription="@string/desc_image" />
+
+            <LinearLayout
+                n1:layout_gravity="bottom"
+                n1:orientation="vertical"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="5.0dip">
+
+                <TextView
+                    n1:textSize="14.0dip"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffc84463"
+                    n1:layout_gravity="right"
+                    n1:id="@id/msg_adapter_me_count"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="1" />
+
+                <LinearLayout
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="5.0dip">
+
+                    <ImageView
+                        n1:id="@id/msg_adapter_me_time"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:src="@drawable/chat_ico_clock"
+                        n1:contentDescription="@string/desc_image" />
+
+                    <TextView
+                        n1:textSize="12.0dip"
+                        n1:textColor="#ff818181"
+                        n1:id="@id/msg_adapter_me_time2"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:text="오후 01:05" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:background="@drawable/chat_bubble_me"
+                n1:padding="7.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <com.yeoboya.com.yeoboya.util.CustomImageView n1:id="@id/msg_adapter_me_image"
+                    n1:visibility="visible"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginRight="5.0dip"
+                    n1:src="@drawable/default_image2"
+                    n1:scaleType="fitCenter"
+                    n1:adjustViewBounds="true"
+                    n1:contentDescription="@string/desc_image"
+                    n4:img_max_width="180.0dip"
+                    xmlns:n4="http://schemas.android.com/apk/res-auto" />
+
+                <TextView
+                    n1:textSize="14.0dip"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffd2cfcb"
+                    n1:id="@id/msg_adapter_me_msg"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginRight="5.0dip"
+                    n1:text="내용"
+                    n1:lineSpacingExtra="4.0dip"
+                    n1:lineSpacingMultiplier="0.7" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="left"
+        n1:layout_gravity="right"
+        n1:orientation="vertical"
+        n1:id="@id/msg_adapter_broker_you_layer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="30.0dip"
+        n1:layout_marginTop="7.0dip"
+        n1:layout_marginRight="17.0dip">
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <LinearLayout
+                    n1:orientation="horizontal"
+                    n1:id="@id/msg_adapter_broker_you_click_layer"
+                    n1:background="@drawable/chat_matchmaking_msgbox"
+                    n1:padding="7.0dip"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:layout_marginTop="4.0dip">
+
+                    <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/msg_adapter_broker_you_picture"
+                        n1:layout_width="56.0dip"
+                        n1:layout_height="56.0dip"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:src="@drawable/chat_avatar_default_female_2"
+                        n5:poly_border="false"
+                        n5:poly_border_color="#ffdce2f2"
+                        n5:poly_border_width="5.0dip"
+                        n5:poly_corner_radius="25.0"
+                        n5:poly_rotation_angle="0.0"
+                        n5:poly_shadow="false"
+                        n5:poly_shadow_color="#ffff0011"
+                        n5:poly_vertices="0"
+                        xmlns:n5="http://schemas.android.com/apk/res-auto" />
+
+                    <LinearLayout
+                        n1:orientation="vertical"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="10.0dip">
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_you_nick"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="대화명"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_you_area"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="4.0dip"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="대지역"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_you_type"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="4.0dip"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="만남유형"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <LinearLayout
+                            n1:orientation="horizontal"
+                            n1:id="@id/msg_adapter_broker_you_certify"
+                            n1:visibility="visible"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="4.0dip">
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_broker_you_married"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="혼인관계증명"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_broker_you_married_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:layout_marginRight="5.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_broker_you_salary"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="연봉"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_broker_you_salary_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:layout_marginRight="5.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="12.0dip"
+                                n1:textColor="#ff292929"
+                                n1:id="@id/msg_adapter_broker_you_career"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="학력"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+
+                            <TextView
+                                n1:textSize="11.0dip"
+                                n1:textStyle="bold"
+                                n1:textColor="#ffffffff"
+                                n1:gravity="center"
+                                n1:id="@id/msg_adapter_broker_you_career_1"
+                                n1:background="@drawable/badge_p_info"
+                                n1:visibility="visible"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginLeft="2.0dip"
+                                n1:text="1"
+                                n1:lineSpacingExtra="4.0dip"
+                                n1:lineSpacingMultiplier="0.7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    n1:id="@id/msg_adapter_broker_you_sex"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:src="@drawable/chat_matchmaking_badge_f"
+                    n1:contentDescription="@string/desc_image" />
+            </RelativeLayout>
+
+            <LinearLayout
+                n1:layout_gravity="bottom"
+                n1:orientation="vertical"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="5.0dip">
+
+                <TextView
+                    n1:textSize="14.0dip"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffc84463"
+                    n1:layout_gravity="right"
+                    n1:id="@id/msg_adapter_broker_you_count"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="1" />
+
+                <LinearLayout
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="5.0dip">
+
+                    <ImageView
+                        n1:id="@id/msg_adapter_broker_you_time"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:src="@drawable/chat_ico_clock"
+                        n1:contentDescription="@string/desc_image" />
+
+                    <TextView
+                        n1:textSize="12.0dip"
+                        n1:textColor="#ff818181"
+                        n1:id="@id/msg_adapter_broker_you_time2"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:text="오후 01:05" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="right"
+        n1:layout_gravity="right"
+        n1:orientation="vertical"
+        n1:id="@id/msg_adapter_broker_me_layer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="30.0dip"
+        n1:layout_marginTop="7.0dip"
+        n1:layout_marginRight="17.0dip">
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <ImageView
+                n1:layout_gravity="bottom"
+                n1:id="@id/msg_adapter_broker_me_resend"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/yeoboya_chat_btn_resend"
+                n1:contentDescription="@string/desc_image" />
+
+            <LinearLayout
+                n1:layout_gravity="bottom"
+                n1:orientation="vertical"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="5.0dip">
+
+                <TextView
+                    n1:textSize="14.0dip"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffc84463"
+                    n1:layout_gravity="right"
+                    n1:id="@id/msg_adapter_broker_me_count"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="1" />
+
+                <LinearLayout
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="5.0dip">
+
+                    <ImageView
+                        n1:id="@id/msg_adapter_broker_me_time"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:src="@drawable/chat_ico_clock"
+                        n1:contentDescription="@string/desc_image" />
+
+                    <TextView
+                        n1:textSize="12.0dip"
+                        n1:textColor="#ff818181"
+                        n1:id="@id/msg_adapter_broker_me_time2"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:text="오후 01:05" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <LinearLayout
+                    n1:orientation="horizontal"
+                    n1:id="@id/msg_adapter_broker_me_click_layer"
+                    n1:background="@drawable/chat_matchmaking_msgbox"
+                    n1:padding="7.0dip"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:layout_marginTop="4.0dip">
+
+                    <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/msg_adapter_broker_me_picture"
+                        n1:layout_width="56.0dip"
+                        n1:layout_height="56.0dip"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:src="@drawable/chat_avatar_default_male_2"
+                        n6:poly_border="false"
+                        n6:poly_border_color="#ffdce2f2"
+                        n6:poly_border_width="5.0dip"
+                        n6:poly_corner_radius="25.0"
+                        n6:poly_rotation_angle="0.0"
+                        n6:poly_shadow="false"
+                        n6:poly_shadow_color="#ffff0011"
+                        n6:poly_vertices="0"
+                        xmlns:n6="http://schemas.android.com/apk/res-auto" />
+
+                    <LinearLayout
+                        n1:orientation="vertical"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="10.0dip">
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_me_nick"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="대화명"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_me_area"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="4.0dip"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="대지역"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+
+                        <TextView
+                            n1:textSize="13.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff1e222b"
+                            n1:id="@id/msg_adapter_broker_me_type"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="4.0dip"
+                            n1:layout_marginRight="5.0dip"
+                            n1:text="만남유형"
+                            n1:lineSpacingExtra="4.0dip"
+                            n1:lineSpacingMultiplier="0.7" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    n1:id="@id/msg_adapter_broker_me_sex"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:src="@drawable/chat_matchmaking_badge_m"
+                    n1:contentDescription="@string/desc_image" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

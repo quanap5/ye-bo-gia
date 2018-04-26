@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:background="#ff000000"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/crop_title_layer"
+        n1:background="#ff483334"
+        n1:layout_width="fill_parent"
+        n1:layout_height="45.0dip">
+
+        <TextView
+            n1:layout_gravity="center"
+            n1:id="@id/crop_title_back"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="10.0dip"
+            n1:src="@drawable/btn_back3"
+            n1:drawableLeft="@drawable/btn_back3"
+            n1:layout_weight="1.0" />
+
+        <TextView
+            n1:textSize="16.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ffffffff"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/crop_title_couter"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:text="1/5"
+            n1:layout_weight="1.0" />
+
+        <TextView
+            n1:textSize="16.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ffffffff"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/crop_title_ok"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:text="자르기 완료"
+            n1:layout_weight="1.0" />
+    </LinearLayout>
+
+    <com.housejh.library.multiimagechooser.crop.CropImageView
+        n1:id="@id/cropImage"
+        n1:background="@drawable/xml_crop_texture"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@id/crop_title_layer"
+        n1:layout_centerInParent="true" />
+</RelativeLayout>

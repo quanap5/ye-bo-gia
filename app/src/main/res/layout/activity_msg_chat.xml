@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ffffffff"
+    n1:orientation="vertical"
+    n1:visibility="visible">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="45.0dip"
+        n1:background="#ff483334"
+        n1:orientation="horizontal"
+        n1:visibility="visible">
+
+        <com.yeoboya.com.yeoboya.test.SelectorImageView xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_back"
+            n1:layout_width="30.0dip"
+            n1:layout_height="30.0dip"
+            n1:layout_gravity="center"
+            n1:layout_marginLeft="17.0dip"
+            n1:background="@drawable/chat_navi_ico_back_normal"
+            n2:img_normal_drawable="@drawable/chat_navi_ico_back_normal"
+            n2:img_pressed_drawable="@drawable/chat_navi_ico_back_press" />
+
+        <TextView
+            n1:id="@id/msg_chat_nickname"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center_vertical"
+            n1:layout_marginLeft="11.0dip"
+            n1:layout_weight="1.0"
+            n1:text=""
+            n1:textColor="#ffffffff"
+            n1:textSize="14.0dip" />
+
+        <CheckBox
+            n1:id="@id/msg_chat_favorite"
+            n1:layout_width="30.0dip"
+            n1:layout_height="30.0dip"
+            n1:layout_gravity="center"
+            n1:layout_marginRight="5.0dip"
+            n1:button="@drawable/xml_favorite_btn"
+            n1:padding="12.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="45.0dip"
+        n1:background="#ffffffff"
+        n1:orientation="horizontal">
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n3="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_alllist"
+            n1:layout_width="65.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="17.0dip"
+            n1:layout_marginTop="5.0dip"
+            n3:btn_icon_position="2"
+            n3:btn_normal_bg="@drawable/chat_topbtn_type1_normal"
+            n3:btn_normal_icon="@drawable/chat_topbtn_textimg_golists_normal"
+            n3:btn_pressed_bg="@drawable/chat_topbtn_type1_press"
+            n3:btn_pressed_icon="@drawable/chat_topbtn_textimg_golists_press" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n4="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_msgbox"
+            n1:layout_width="55.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="3.0dip"
+            n1:layout_marginTop="5.0dip"
+            n4:btn_icon_position="2"
+            n4:btn_normal_bg="@drawable/chat_topbtn_type1_normal"
+            n4:btn_normal_icon="@drawable/chat_topbtn_textimg_gomessagebox_normal"
+            n4:btn_pressed_bg="@drawable/chat_topbtn_type1_press"
+            n4:btn_pressed_icon="@drawable/chat_topbtn_textimg_gomessagebox_press" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n5="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_deny"
+            n1:layout_width="55.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="3.0dip"
+            n1:layout_marginTop="5.0dip"
+            n5:btn_disable_bg="@drawable/chat_topbtn_type1_disable"
+            n5:btn_disable_icon="@drawable/chat_topbtn_textimg_shutout_disable"
+            n5:btn_icon_position="2"
+            n5:btn_normal_bg="@drawable/chat_topbtn_type1_normal"
+            n5:btn_normal_icon="@drawable/chat_topbtn_textimg_shutout_normal"
+            n5:btn_pressed_bg="@drawable/chat_topbtn_type1_press"
+            n5:btn_pressed_icon="@drawable/chat_topbtn_textimg_shutout_press" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n6="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_delete"
+            n1:layout_width="55.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="3.0dip"
+            n1:layout_marginTop="5.0dip"
+            n6:btn_icon_position="2"
+            n6:btn_normal_bg="@drawable/chat_topbtn_type1_normal"
+            n6:btn_normal_icon="@drawable/chat_topbtn_textimg_delete_normal"
+            n6:btn_pressed_bg="@drawable/chat_topbtn_type1_press"
+            n6:btn_pressed_icon="@drawable/chat_topbtn_textimg_delete_press" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n7="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_write"
+            n1:layout_width="63.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="24.0dip"
+            n1:layout_marginTop="5.0dip"
+            n7:btn_icon_position="2"
+            n7:btn_normal_bg="@drawable/chat_topbtn_type1_normal"
+            n7:btn_normal_icon="@drawable/chat_topbtn_textimg_write_normal"
+            n7:btn_pressed_bg="@drawable/chat_topbtn_type1_press"
+            n7:btn_pressed_icon="@drawable/chat_topbtn_textimg_write_press" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorButton xmlns:n8="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_mebers"
+            n1:layout_width="79.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginLeft="8.0dip"
+            n1:layout_marginTop="5.0dip"
+            n1:visibility="gone"
+            n8:btn_icon_position="2"
+            n8:btn_normal_bg="@drawable/chat_topbtn_type2_normal"
+            n8:btn_normal_icon="@drawable/chat_topbtn_textimg_matchmaking_normal"
+            n8:btn_pressed_bg="@drawable/chat_topbtn_type2_press"
+            n8:btn_pressed_icon="@drawable/chat_topbtn_textimg_matchmaking_press" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@id/layout_main_splash"
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0dip"
+        n1:layout_marginBottom="10.0dip"
+        n1:background="#ffdadada"
+        n1:orientation="vertical" />
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="0.9">
+
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+
+            <ListView
+                n1:id="@id/msg_chat_list"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_marginBottom="5.0dip"
+                n1:clickable="false"
+                n1:divider="@null"
+                n1:focusable="false"
+                n1:listSelector="@drawable/select_list_empty"
+                n1:stackFromBottom="true"
+                n1:transcriptMode="alwaysScroll" />
+
+            <LinearLayout
+                n1:id="@id/msg_chat_list_empty"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_marginBottom="5.0dip"
+                n1:gravity="center"
+                n1:orientation="vertical"
+                n1:visibility="visible">
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:contentDescription="@string/bitmap_image"
+                    n1:src="@drawable/blankpage_ico_exclamationmark" />
+
+                <TextView
+                    n1:id="@id/msg_chat_txt_empty"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:gravity="center_horizontal"
+                    n1:text=""
+                    n1:textColor="#ff9199a1"
+                    n1:textSize="15.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@id/msg_chat_banner"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip"
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:visibility="invisible">
+
+        <ImageView
+            n1:id="@id/msg_chat_img_banner"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="right"
+            n1:layout_marginRight="9.0dip"
+            n1:src="@drawable/btn_bnr_msg"
+            n1:text="111"
+            n1:textColor="#ff9199a1"
+            n1:textSize="15.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/chat_input_box"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:paddingBottom="2.0dip"
+        n1:paddingTop="3.0dip">
+
+        <com.yeoboya.com.yeoboya.test.SelectorImageView xmlns:n9="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_getimage"
+            n1:layout_width="43.0dip"
+            n1:layout_height="39.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n9:img_disable_drawable="@drawable/msg_camera_btn_disable"
+            n9:img_normal_drawable="@drawable/msg_camera_btn"
+            n9:img_pressed_drawable="@drawable/msg_camera_btn_s" />
+
+        <com.yeoboya.com.yeoboya.test.SelectorImageView xmlns:n10="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/msg_chat_getimage2"
+            n1:layout_width="43.0dip"
+            n1:layout_height="39.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n10:img_disable_drawable="@drawable/msg_vchat_btn_disable"
+            n10:img_normal_drawable="@drawable/msg_vchat_btn"
+            n10:img_pressed_drawable="@drawable/msg_vchat_btn_s" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="11.0dip"
+            n1:background="@drawable/chat_input_textbox"
+            n1:focusable="true"
+            n1:focusableInTouchMode="true"
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:paddingBottom="5.0dip"
+            n1:paddingTop="5.0dip">
+
+            <EditText
+                n1:id="@id/msg_chat_input"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_weight="1.0"
+                n1:background="@null"
+                n1:hint="@string/hint_input_msg"
+                n1:maxLength="200"
+                n1:padding="5.0dip"
+                n1:textColor="#ff2f3036"
+                n1:textSize="15.0dip"
+                n1:visibility="visible" />
+
+            <ImageView
+                n1:id="@id/msg_chat_qeust"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_weight="1.0"
+                n1:contentDescription="@string/bitmap_image"
+                n1:paddingLeft="4.0dip"
+                n1:src="@drawable/txtimg_goto_inquiry"
+                n1:visibility="gone" />
+
+            <com.yeoboya.com.yeoboya.test.SelectorImageView xmlns:n11="http://schemas.android.com/apk/res-auto"
+                n1:id="@id/msg_chat_sendmsg"
+                n1:layout_width="37.0dip"
+                n1:layout_height="27.0dip"
+                n1:layout_gravity="center"
+                n1:layout_marginLeft="8.0dip"
+                n1:layout_marginRight="8.0dip"
+                n11:img_disable_drawable="@drawable/chat_input_ico_send_disable"
+                n11:img_normal_drawable="@drawable/chat_input_ico_send_normal"
+                n11:img_pressed_drawable="@drawable/chat_input_ico_send_press" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

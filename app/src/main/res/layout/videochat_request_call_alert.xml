@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="horizontal"
+    n1:background="#cc1e1a1a"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:layout_gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="304.0dip"
+        n1:layout_height="375.0dip">
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <LinearLayout
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal"
+                n1:id="@id/callpop_layer_title"
+                n1:background="@drawable/quick_request_header"
+                n1:layout_width="fill_parent"
+                n1:layout_height="38.0dip"
+                n1:layout_alignParentLeft="true">
+
+                <ImageView
+                    n1:id="@id/callpop_req_title_img"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="17.0dip"
+                    n1:src="@drawable/quick_request_header_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_below="@id/callpop_layer_title"
+                n1:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    n1:orientation="vertical"
+                    n1:background="#ffffffff"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content">
+
+                    <LinearLayout
+                        n1:gravity="center_horizontal"
+                        n1:orientation="horizontal"
+                        n1:paddingTop="22.0dip"
+                        n1:paddingBottom="11.0dip"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            n1:layout_width="70.0dip"
+                            n1:layout_height="75.0dip">
+
+                            <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/callpop_req_picture"
+                                n1:layout_width="69.0dip"
+                                n1:layout_height="69.0dip"
+                                n1:src="@drawable/callpop_picture"
+                                n2:poly_border="true"
+                                n2:poly_border_color="#ffd6d7dd"
+                                n2:poly_border_width="2.0dip"
+                                n2:poly_corner_radius="10.0"
+                                n2:poly_rotation_angle="0.0"
+                                n2:poly_shadow="false"
+                                n2:poly_vertices="0"
+                                xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+                            <ImageView
+                                n1:id="@id/callpop_req_picture2"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:src="@drawable/quick_request_icon01"
+                                n1:layout_alignParentBottom="true"
+                                n1:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            n1:layout_gravity="center_vertical"
+                            n1:orientation="vertical"
+                            n1:paddingLeft="10.0dip"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content">
+
+                            <TextView
+                                n1:textSize="16.0dip"
+                                n1:textColor="#fff83942"
+                                n1:gravity="center_horizontal"
+                                n1:id="@id/callpop_req_name"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginBottom="5.0dip"
+                                n1:text="사랑하고싶다정말"
+                                n1:textScaleX="1.1" />
+
+                            <TextView
+                                n1:textSize="14.0dip"
+                                n1:textColor="#fff83942"
+                                n1:gravity="center_horizontal"
+                                n1:id="@id/callpop_req_area"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="(여/30세/서울)"
+                                n1:textScaleX="1.1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:gravity="center_horizontal"
+                        n1:orientation="horizontal"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content">
+
+                        <TextView
+                            n1:textSize="22.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#ff483334"
+                            n1:gravity="center_horizontal"
+                            n1:id="@id/callpop_req_wati_count"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginTop="12.0dip"
+                            n1:layout_marginBottom="5.0dip"
+                            n1:text="응답을 기다리는 중입니다."
+                            n1:textScaleX="0.9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:gravity="center_horizontal"
+                        n1:orientation="horizontal"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content">
+
+                        <TextView
+                            n1:textSize="22.0dip"
+                            n1:textStyle="bold"
+                            n1:textColor="#fff83942"
+                            n1:gravity="center_horizontal"
+                            n1:id="@id/callpop_req_wati_count2"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="13.0dip"
+                            n1:text="25초"
+                            n1:textScaleX="0.9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:orientation="vertical"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content">
+
+                        <ImageView
+                            n1:id="@id/callpop_req_divid"
+                            n1:background="#ffc3c3c3"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0dip"
+                            n1:layout_marginLeft="10.0dip"
+                            n1:layout_marginRight="10.0dip"
+                            n1:layout_marginBottom="10.0dip" />
+
+                        <TextView
+                            n1:textSize="11.0dip"
+                            n1:textColor="#ff483334"
+                            n1:id="@id/callpop_req_desc1"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginLeft="10.0dip"
+                            n1:layout_marginBottom="6.0dip"
+                            n1:text=" - 나와 상대방의 전화번호가 남지 않습니다."
+                            n1:textScaleX="1.1" />
+
+                        <TextView
+                            n1:textSize="11.0dip"
+                            n1:textColor="#ff483334"
+                            n1:id="@id/callpop_req_desc2"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginLeft="10.0dip"
+                            n1:layout_marginBottom="6.0dip"
+                            n1:text=" - 30초 경과 후 응답이 없을 경우 자동 취소됩니다."
+                            n1:textScaleX="1.1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:gravity="center"
+                    n1:orientation="horizontal"
+                    n1:id="@id/callpop_req_layout_cancel"
+                    n1:background="@drawable/quick_request_footer"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="50.0dip">
+
+                    <ImageView
+                        n1:id="@id/callpop_req_call_cancel"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:src="@drawable/quick_request_footer_txt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                n1:id="@id/callpop_req_icon"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="12.0dip"
+                n1:layout_marginRight="23.0dip"
+                n1:src="@drawable/quick_request_logo"
+                n1:layout_alignParentRight="true"
+                n1:contentDescription="@string/bitmap_image" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

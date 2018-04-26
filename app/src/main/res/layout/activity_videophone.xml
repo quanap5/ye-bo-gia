@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:id="@id/layout_videophone"
+    n1:background="#ff000000"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        n1:gravity="center_horizontal"
+        n1:id="@id/layout_videophone_subscriberview"
+        n1:background="#ff362e27"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:keepScreenOn="true">
+
+        <ProgressBar
+            n1:id="@id/layout_videophone_subscriberview_loadingSpinner"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:indeterminate="false"
+            n1:layout_centerInParent="true"
+            style="?android:progressBarStyleLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:gravity="center_horizontal"
+        n1:id="@id/layout_videophone_subscriberview_avatarview"
+        n1:background="#ff362e27"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:keepScreenOn="true">
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_avatar1"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/videophone_subscriberview_avatar1" />
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_avatar2"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/videophone_subscriberview_avatar2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:orientation="vertical"
+        n1:id="@id/layout_videophone_subscriberview_pause"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true">
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_pause_image"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/videophone_subscriberview_pause" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:id="@id/layout_videophone_publisherview"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:keepScreenOn="true" />
+
+    <RelativeLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignLeft="@id/layout_videophone_publisherview">
+
+        <CheckBox
+            n1:id="@id/layout_videophone_publisherview_size"
+            n1:background="@drawable/videophone_publisherview_size_selector"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="3.0dip"
+            n1:layout_marginTop="10.0dip"
+            n1:button="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:id="@id/layout_videophone_fragment_top_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="80.0dip"
+        n1:layout_alignParentTop="true"
+        n1:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        n1:id="@id/layout_videophone_fragment_bottom_container"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="47.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        n1:id="@id/layout_videophone_fragment_chat_container"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="185.0dip"
+        n1:layout_marginBottom="41.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        n1:id="@id/layout_videophone_fragment_crystal_container"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="170.0dip"
+        n1:layout_marginBottom="79.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        n1:orientation="vertical"
+        n1:id="@id/layout_videophone_subscriberview_recv_crystal"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true">
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_recv_crystal_ani5"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ani_recvcrystal_l5_2"
+            n1:layout_centerInParent="true" />
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_recv_crystal_ani4"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ani_recvcrystal_l4"
+            n1:layout_centerInParent="true" />
+
+        <RelativeLayout
+            n1:layout_width="200.0dip"
+            n1:layout_height="200.0dip"
+            n1:layout_centerInParent="true">
+
+            <ImageView
+                n1:id="@id/layout_videophone_subscriberview_recv_crystal_ani3"
+                n1:layout_width="150.0dip"
+                n1:layout_height="150.0dip"
+                n1:layout_marginBottom="10.0dip"
+                n1:src="@drawable/ani_recvcrystal_l3"
+                n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <ImageView
+            n1:id="@id/layout_videophone_subscriberview_recv_crystal_ani2"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ani_recvcrystal_l2_crystal_1"
+            n1:layout_centerInParent="true" />
+
+        <RelativeLayout
+            n1:layout_width="100.0dip"
+            n1:layout_height="100.0dip"
+            n1:layout_centerInParent="true">
+
+            <ImageView
+                n1:id="@id/layout_videophone_subscriberview_recv_crystal_ani1"
+                n1:layout_width="50.0dip"
+                n1:layout_height="50.0dip"
+                n1:layout_marginLeft="10.0dip"
+                n1:layout_marginTop="10.0dip"
+                n1:src="@drawable/ani_recvcrystal_l1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            n1:id="@id/layout_videophone_subscriberview_recv_crystal_text"
+            n1:layout_width="fill_parent"
+            n1:layout_height="200.0dip"
+            n1:layout_centerInParent="true">
+
+            <RelativeLayout
+                n1:gravity="center"
+                n1:background="#99000000"
+                n1:layout_width="fill_parent"
+                n1:layout_height="40.0dip"
+                n1:layout_alignParentBottom="true"
+                n1:layout_centerHorizontal="true">
+
+                <TextView
+                    n1:textSize="18.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffebff61"
+                    n1:id="@id/layout_videophone_subscriberview_recv_crystal_text1"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginBottom="4.0dip"
+                    n1:text="보석 "
+                    n1:layout_alignParentBottom="true" />
+
+                <TextView
+                    n1:textSize="30.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffebff61"
+                    n1:id="@id/layout_videophone_subscriberview_recv_crystal_text2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="50"
+                    n1:layout_toRightOf="@id/layout_videophone_subscriberview_recv_crystal_text1"
+                    n1:layout_alignParentBottom="true" />
+
+                <TextView
+                    n1:textSize="18.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffebff61"
+                    n1:id="@id/layout_videophone_subscriberview_recv_crystal_text3"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginBottom="3.0dip"
+                    n1:text="개 선물 도착"
+                    n1:layout_toRightOf="@id/layout_videophone_subscriberview_recv_crystal_text2"
+                    n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

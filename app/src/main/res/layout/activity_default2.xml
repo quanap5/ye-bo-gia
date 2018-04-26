@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:background="#ff483334"
+        n1:layout_width="fill_parent"
+        n1:layout_height="45.0dip">
+
+        <ImageView
+            n1:id="@id/picker_close"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:src="@drawable/btn_back2" />
+
+        <TextView
+            n1:textSize="16.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ffffffff"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/picker_title"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:text="Photo Album"
+            n1:layout_weight="1.0" />
+
+        <ImageView
+            n1:layout_gravity="center"
+            n1:id="@id/picker_makeani"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="4.0dip"
+            n1:src="@drawable/xml_btn_makeani" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@id/linearLayout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="37.0dip"
+        n1:layout_marginTop="45.0dip"
+        n1:background="#ffd2d2d2"
+        n1:orientation="horizontal"
+        n1:visibility="visible">
+
+        <TextView
+            n1:id="@id/picker_choice"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginLeft="14.0dip"
+            n1:gravity="center|left"
+            n1:text="Select photo"
+            n1:textColor="#ff483334"
+            n1:textSize="14.0dip"
+            n1:textStyle="bold" />
+
+        <TextView
+            n1:id="@id/picker_maxcount"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_weight="1.0"
+            n1:gravity="center|left"
+            n1:text="(Up to 20)"
+            n1:textColor="#ffff5252"
+            n1:textSize="13.0dip"
+            n1:textStyle="bold" />
+
+        <ImageView
+            n1:id="@id/picker_all_cancel"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginRight="4.0dip"
+            n1:src="@drawable/xml_btn_cancel_all" />
+    </LinearLayout>
+
+    <FrameLayout
+        n1:id="@id/picker_grid"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentLeft="true"
+        n1:layout_below="@id/linearLayout"
+        n1:background="#ff181819"
+        n1:visibility="visible" />
+</RelativeLayout>

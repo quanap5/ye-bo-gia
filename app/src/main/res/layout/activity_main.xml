@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:orientation="vertical"
+    n1:visibility="visible">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:orientation="vertical"
+        n1:visibility="visible">
+
+        <LinearLayout
+            n1:id="@id/ma_webview"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentBottom="true"
+            n1:layout_alignParentLeft="true"
+            n1:layout_alignParentRight="true"
+            n1:layout_weight="0.8"
+            n1:orientation="horizontal"
+            n1:visibility="visible" />
+
+        <LinearLayout
+            n1:id="@id/ma_layout_btns"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center_vertical"
+            n1:background="@color/foot_btn_normal"
+            n1:orientation="horizontal"
+            n1:visibility="visible"
+            n1:weightSum="1.2">
+
+            <ImageView
+                n1:id="@id/ma_btn_home"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:clickable="true"
+                n1:scaleType="center"
+                n1:src="@drawable/footer_nav_01" />
+
+            <ImageView
+                n1:id="@id/ma_btn_back"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:clickable="true"
+                n1:scaleType="center"
+                n1:src="@drawable/btn_footer_goback" />
+
+            <ImageView
+                n1:id="@id/ma_btn_forward"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:clickable="true"
+                n1:scaleType="center"
+                n1:src="@drawable/btn_footer_goforward" />
+
+            <ImageView
+                n1:id="@id/ma_btn_reflash"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:clickable="true"
+                n1:scaleType="center"
+                n1:src="@drawable/footer_nav_04" />
+
+            <ImageView
+                n1:id="@id/ma_btn_myinfo"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:clickable="true"
+                n1:scaleType="center"
+                n1:src="@drawable/footer_nav_05" />
+
+            <ImageView
+                n1:id="@id/ma_btn_more"
+                n1:layout_width="0.0dip"
+                n1:layout_height="45.0dip"
+                n1:layout_gravity="center"
+                n1:layout_weight="0.2"
+                n1:background="@drawable/btn_footer_selector"
+                n1:scaleType="center"
+                n1:src="@drawable/footer_nav_06" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@id/layout_main_splash"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:background="@drawable/new_sp_bg_001"
+        n1:gravity="center_horizontal"
+        n1:orientation="vertical"
+        n1:visibility="invisible"
+        n1:weightSum="1.0">
+
+        <LinearLayout
+            n1:id="@id/layout_ani_main_splash"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="0.3"
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:visibility="visible">
+
+            <ImageView
+                n1:id="@id/layout_main_logo"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/img_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="top"
+            n1:layout_weight="0.5"
+            n1:orientation="horizontal">
+
+            <LinearLayout
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_weight="0.2"
+                n1:orientation="horizontal" />
+
+            <LinearLayout
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_weight="0.6"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@id/layout_main_secretimg"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center_horizontal"
+                    n1:src="@drawable/sp_002_ment_img"
+                    n1:visibility="gone" />
+
+                <TextView
+                    n1:id="@id/layout_main_secrettext"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent"
+                    n1:background="@drawable/sp01_txt"
+                    n1:gravity="center"
+                    n1:lineSpacingExtra="5.0dip"
+                    n1:paddingBottom="20.0dip"
+                    n1:paddingTop="25.0dip"
+                    n1:text="Hay thap sang nhung anh den long \n va gap nhau o Yeoboya"
+                    n1:textColor="#ffffffff"
+                    n1:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginBottom="20.0dip"
+                n1:layout_weight="0.2"
+                n1:orientation="horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="0.2"
+            n1:gravity="center"
+            n1:orientation="vertical">
+
+            <ImageView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/copyright_txt" />
+
+            <ImageView
+                n1:id="@id/layout_main_secretcurple"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip"
+                n1:src="@drawable/sp_002_img"
+                n1:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView n1:background="@drawable/autofill_chip_inset"
+    n1:padding="12.0dip"
+    n1:layout_width="40.0dip"
+    n1:layout_height="@dimen/keyboard_accessory_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android" />

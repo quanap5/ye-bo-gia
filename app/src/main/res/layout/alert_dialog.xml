@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:layout_gravity="center"
+    n1:orientation="vertical"
+    n1:id="@id/loading"
+    n1:background="@drawable/dialog_background"
+    n1:padding="10.0dip"
+    n1:layout_width="@dimen/alert_width"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        n1:id="@id/custom_image"
+        n1:visibility="gone"
+        n1:layout_width="53.0dip"
+        n1:layout_height="53.0dip"
+        n1:layout_marginTop="5.0dip"
+        n1:scaleType="fitCenter"
+        n1:contentDescription="@string/app_name" />
+
+    <FrameLayout
+        n1:id="@id/error_frame"
+        n1:visibility="gone"
+        n1:layout_width="53.0dip"
+        n1:layout_height="53.0dip"
+        n1:layout_marginTop="5.0dip">
+
+        <View
+            n1:background="@drawable/error_circle"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <ImageView
+            n1:id="@id/error_x"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/error_center_x"
+            n1:scaleType="center"
+            n1:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+    <FrameLayout
+        n1:id="@id/success_frame"
+        n1:visibility="gone"
+        n1:layout_width="53.0dip"
+        n1:layout_height="53.0dip"
+        n1:layout_marginTop="5.0dip">
+
+        <View
+            n1:background="@drawable/success_bow"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <View
+            n1:layout_gravity="right"
+            n1:id="@id/mask_right"
+            n1:background="@android:color/white"
+            n1:layout_width="35.0dip"
+            n1:layout_height="80.0dip"
+            n1:layout_marginTop="-13.0dip" />
+
+        <View
+            n1:layout_gravity="left"
+            n1:id="@id/mask_left"
+            n1:background="@android:color/white"
+            n1:layout_width="21.0dip"
+            n1:layout_height="60.0dip"
+            n1:layout_marginLeft="-3.0dip" />
+
+        <View
+            n1:background="@drawable/success_circle"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <com.jhproject.library.customdialog.SuccessTickView
+            n1:id="@id/success_tick"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        n1:id="@id/warning_frame"
+        n1:visibility="gone"
+        n1:layout_width="53.0dip"
+        n1:layout_height="53.0dip"
+        n1:layout_marginTop="5.0dip">
+
+        <View
+            n1:background="@drawable/warning_circle"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <ImageView
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/warning_sigh"
+            n1:scaleType="center"
+            n1:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+    <FrameLayout
+        n1:layout_gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/progress_dialog"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="9.0dip">
+
+        <com.jhproject.library.myprogressbar.ProgressWheel n1:layout_gravity="center"
+            n1:id="@id/progressWheel"
+            n1:layout_width="80.0dip"
+            n1:layout_height="80.0dip"
+            n2:matProg_progressIndeterminate="true"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+
+    <TextView
+        n1:textSize="19.0sp"
+        n1:textColor="#ff575757"
+        n1:id="@id/title_text"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="10.0dip"
+        n1:text="@string/dialog_default_title"
+        n1:singleLine="true" />
+
+    <TextView
+        n1:textSize="14.0sp"
+        n1:textColor="#ff797979"
+        n1:gravity="center"
+        n1:id="@id/content_text"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="10.0dip" />
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="10.0dip">
+
+        <Button
+            n1:id="@id/cancel_button"
+            n1:background="@drawable/gray_button_background"
+            n1:visibility="gone"
+            n1:layout_marginRight="10.0dip"
+            n1:text="@string/dialog_cancel"
+            style="@style/dialog_blue_button" />
+
+        <Button
+            n1:id="@id/confirm_button"
+            n1:text="@string/dialog_ok"
+            style="@style/dialog_blue_button" />
+    </LinearLayout>
+</LinearLayout>

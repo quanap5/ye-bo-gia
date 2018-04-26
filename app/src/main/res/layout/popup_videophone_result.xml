@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_gravity="center"
+    n1:background="@drawable/popup_videophone_result_bg"
+    n1:layout_width="352.0dip"
+    n1:layout_height="283.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:id="@id/layout_popup_videophoneresult_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="18.0dip"
+        n1:layout_marginTop="18.0dip">
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/popup_videophone_result_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_popup_videophoneresult_content"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="18.0dip"
+        n1:layout_marginTop="18.0dip"
+        n1:layout_below="@id/layout_popup_videophoneresult_title">
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="5.0dip"
+            n1:src="@drawable/popup_videophone_result_gift" />
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="30.0dip">
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffffffff"
+                    n1:id="@id/layout_popup_videophoneresult_text_chattime"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="채팅시간 : " />
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffaaffa6"
+                    n1:id="@id/layout_popup_videophoneresult_text_chattime2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="155분 30초"
+                    n1:layout_toRightOf="@id/layout_popup_videophoneresult_text_chattime" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffffffff"
+                    n1:id="@id/layout_popup_videophoneresult_text_chatreward"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="리 워 드   : " />
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffff9898"
+                    n1:id="@id/layout_popup_videophoneresult_text_chatreward2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="6,300원"
+                    n1:layout_toRightOf="@id/layout_popup_videophoneresult_text_chatreward" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffffffff"
+                    n1:id="@id/layout_popup_videophoneresult_text_crystalreward"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="선물보석 : " />
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffff9898"
+                    n1:id="@id/layout_popup_videophoneresult_text_crystalreward2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="45,300원"
+                    n1:layout_toRightOf="@id/layout_popup_videophoneresult_text_crystalreward" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffffffff"
+                    n1:id="@id/layout_popup_videophoneresult_text_totreward"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="적립금액 : " />
+
+                <TextView
+                    n1:textSize="14.0sp"
+                    n1:textStyle="bold"
+                    n1:textColor="#ffff9898"
+                    n1:id="@id/layout_popup_videophoneresult_text_totreward2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="45,300원"
+                    n1:layout_toRightOf="@id/layout_popup_videophoneresult_text_totreward" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        n1:id="@id/layout_popup_videophoneresult_content2"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="20.0dip"
+        n1:layout_below="@id/layout_popup_videophoneresult_content"
+        n1:layout_centerInParent="true">
+
+        <TextView
+            n1:textSize="18.0sp"
+            n1:textStyle="bold"
+            n1:textColor="#ffff9090"
+            n1:id="@id/layout_popup_videophoneresult_text_accreward"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="총 누적금액 : " />
+
+        <TextView
+            n1:textSize="18.0sp"
+            n1:textStyle="bold"
+            n1:textColor="#ffff9090"
+            n1:id="@id/layout_popup_videophoneresult_text_accreward2"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="45,300원"
+            n1:layout_toRightOf="@id/layout_popup_videophoneresult_text_accreward" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="20.0dip"
+        n1:layout_below="@id/layout_popup_videophoneresult_content2"
+        n1:layout_centerHorizontal="true">
+
+        <Button
+            n1:textSize="18.0sp"
+            n1:textColor="#ffffffff"
+            n1:id="@id/layout_popup_videophoneresult_btn_ok"
+            n1:background="@drawable/popup_videophone_result_btn_ok"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text=" 확 인 " />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@drawable/autofill_chip_inset"
+    n1:paddingLeft="@dimen/keyboard_accessory_padding"
+    n1:paddingRight="@dimen/keyboard_accessory_padding"
+    n1:layout_width="wrap_content"
+    n1:layout_height="@dimen/keyboard_accessory_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        n1:textSize="@dimen/keyboard_accessory_text_size"
+        n1:textColor="#ff333333"
+        n1:ellipsize="end"
+        n1:gravity="center_vertical"
+        n1:id="@id/autofill_keyboard_accessory_item_label"
+        n1:paddingLeft="@dimen/keyboard_accessory_half_padding"
+        n1:paddingRight="@dimen/keyboard_accessory_half_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:minWidth="@dimen/keyboard_accessory_chip_height"
+        n1:singleLine="true"
+        n1:drawablePadding="@dimen/keyboard_accessory_half_padding"
+        n1:fontFamily="sans-serif-medium" />
+
+    <TextView
+        n1:textSize="@dimen/keyboard_accessory_text_size"
+        n1:textColor="#ff646464"
+        n1:ellipsize="end"
+        n1:gravity="center_vertical"
+        n1:id="@id/autofill_keyboard_accessory_item_sublabel"
+        n1:paddingRight="@dimen/keyboard_accessory_half_padding"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:singleLine="true" />
+</LinearLayout>

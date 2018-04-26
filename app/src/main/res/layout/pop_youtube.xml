@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="match_parent"
+    n1:layout_height="match_parent"
+    n1:background="@android:color/transparent"
+    n1:gravity="center">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="match_parent"
+        n1:layout_alignParentLeft="true"
+        n1:layout_centerVertical="true"
+        n1:layout_margin="10.0dip"
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:visibility="visible">
+
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:orientation="horizontal">
+
+            <ImageView
+                n1:id="@id/pop_youtuve_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignParentLeft="true"
+                n1:layout_margin="10.0dip"
+                n1:src="@drawable/m_title" />
+
+            <ImageView
+                n1:id="@id/pop_youtuve_close"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignParentRight="true"
+                n1:layout_centerVertical="true"
+                n1:layout_margin="10.0dip"
+                n1:onClick="onClick"
+                n1:src="@drawable/m_clse" />
+        </RelativeLayout>
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="200.0dip"
+            n1:background="#ffababab"
+            n1:orientation="vertical"
+            n1:visibility="visible">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                n1:id="@id/pop_youtuve_player"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="4.0dip"
+                n1:background="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

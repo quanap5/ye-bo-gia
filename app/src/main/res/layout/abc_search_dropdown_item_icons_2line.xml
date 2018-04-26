@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent"
+    n1:layout_height="58.0dip"
+    style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        n1:id="@android:id/icon1"
+        style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1"
+        n1:layout_width="@dimen/abc_dropdownitem_icon_width"
+        n1:layout_height="48.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentTop="true"
+        n1:scaleType="centerInside"
+        n1:visibility="visible" />
+
+    <ImageView
+        n1:id="@id/edit_query"
+        style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Query"
+        n1:layout_width="48.0dip"
+        n1:layout_height="48.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentTop="true"
+        n1:background="?selectableItemBackground"
+        n1:scaleType="centerInside"
+        n1:visibility="visible" />
+
+    <ImageView
+        n1:id="@android:id/icon2"
+        style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2"
+        n1:layout_width="48.0dip"
+        n1:layout_height="48.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignWithParentIfMissing="true"
+        n1:scaleType="centerInside"
+        n1:visibility="visible" />
+
+    <TextView
+        n1:id="@android:id/text2"
+        style="?android:dropDownItemStyle"
+        n1:layout_width="fill_parent"
+        n1:layout_height="29.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignWithParentIfMissing="true"
+        n1:gravity="top"
+        n1:paddingBottom="4.0dip"
+        n1:singleLine="true"
+        n1:textAppearance="?textAppearanceSearchResultSubtitle"
+        n1:visibility="visible" />
+
+    <TextView
+        n1:id="@android:id/text1"
+        style="?android:dropDownItemStyle"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@android:id/text2"
+        n1:layout_centerVertical="true"
+        n1:singleLine="true"
+        n1:textAppearance="?textAppearanceSearchResultTitle"
+        n1:visibility="visible" />
+</RelativeLayout>

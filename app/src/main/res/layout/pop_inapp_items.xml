@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center"
+    n1:orientation="vertical"
+    n1:background="#cc1e1a1a"
+    n1:padding="15.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/pop_inapp_title_layer"
+        n1:background="@drawable/bg_header"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip">
+
+        <TextView
+            n1:textSize="18.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff101010"
+            n1:gravity="center"
+            n1:id="@id/pop_inapp_title"
+            n1:paddingLeft="50.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="구매"
+            n1:layout_weight="1.0" />
+
+        <ImageView
+            n1:id="@id/pop_inapp_close"
+            n1:layout_width="50.0dip"
+            n1:layout_height="50.0dip"
+            n1:src="@drawable/btn_cls"
+            n1:scaleType="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/pop_inapp_body_layer"
+        n1:background="#ffffffff"
+        n1:paddingTop="10.0dip"
+        n1:paddingBottom="25.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+
+        <TextView
+            n1:textSize="15.0dip"
+            n1:textColor="#ff383838"
+            n1:gravity="left"
+            n1:id="@id/pop_inapp_item_desc"
+            n1:paddingLeft="18.0dip"
+            n1:paddingBottom="10.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:text="아이템개수를 선택해 주세요" />
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_item_layer_1"
+            n1:background="#ffededed"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="42.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="3.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <com.yeoboya.com.yeoboya.control.CheckableImageView
+                n1:id="@id/pop_inapp_item_check_1"
+                n1:paddingLeft="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/xml_inapp_radiobtn" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_item_count_1"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5개"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/pop_inapp_item_image_1"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginLeft="6.0dip"
+                n1:src="@drawable/img_ctc"
+                n1:scaleType="fitCenter"
+                n1:layout_weight="3.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_item_money_1"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5,000"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_item_layer_2"
+            n1:background="#ff4753ab"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="42.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="3.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <com.yeoboya.com.yeoboya.control.CheckableImageView
+                n1:id="@id/pop_inapp_item_check_2"
+                n1:paddingLeft="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/xml_inapp_radiobtn" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ffffffff"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_item_count_2"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="35개"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/pop_inapp_item_image_2"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="6.0dip"
+                n1:src="@drawable/img_ctc"
+                n1:scaleType="fitStart"
+                n1:layout_weight="3.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ffffffff"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_item_money_2"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="305,000"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_item_layer_3"
+            n1:background="#ffededed"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="42.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="3.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <com.yeoboya.com.yeoboya.control.CheckableImageView
+                n1:id="@id/pop_inapp_item_check_3"
+                n1:paddingLeft="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/xml_inapp_radiobtn" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_item_count_3"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5개"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/pop_inapp_item_image_3"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="6.0dip"
+                n1:src="@drawable/img_ctc"
+                n1:scaleType="fitStart"
+                n1:layout_weight="3.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_item_money_3"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5,000"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_item_layer_4"
+            n1:background="#ffededed"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="42.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="3.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <com.yeoboya.com.yeoboya.control.CheckableImageView
+                n1:id="@id/pop_inapp_item_check_4"
+                n1:paddingLeft="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/xml_inapp_radiobtn" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_item_count_4"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5개"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/pop_inapp_item_image_4"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="6.0dip"
+                n1:src="@drawable/img_ctc"
+                n1:scaleType="fitStart"
+                n1:layout_weight="3.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_item_money_4"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5,000"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_item_layer_5"
+            n1:background="#ffededed"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="42.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="3.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <com.yeoboya.com.yeoboya.control.CheckableImageView
+                n1:id="@id/pop_inapp_item_check_5"
+                n1:paddingLeft="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/xml_inapp_radiobtn" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_item_count_5"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5개"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/pop_inapp_item_image_5"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="6.0dip"
+                n1:src="@drawable/img_ctc"
+                n1:scaleType="fitStart"
+                n1:layout_weight="3.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_item_money_5"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="5,000"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_mycoin_layer"
+            n1:background="#ffe1e7f1"
+            n1:layout_width="fill_parent"
+            n1:layout_height="31.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginTop="7.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff101010"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_mycoin_desc"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="현재보유코인"
+                n1:layout_weight="1.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff101010"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_mycoin_count"
+                n1:paddingLeft="40.0dip"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="0"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/pop_inapp_after_layer"
+            n1:background="#ffe1e7f1"
+            n1:layout_width="fill_parent"
+            n1:layout_height="31.0dip"
+            n1:layout_marginLeft="15.0dip"
+            n1:layout_marginRight="15.0dip">
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="left"
+                n1:id="@id/pop_inapp_after_desc"
+                n1:paddingLeft="8.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="구매후 코인"
+                n1:layout_weight="1.0" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ff383838"
+                n1:gravity="right"
+                n1:id="@id/pop_inapp_after_count"
+                n1:paddingLeft="40.0dip"
+                n1:paddingRight="9.0dip"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="0"
+                n1:drawableRight="@drawable/img_coin"
+                n1:drawablePadding="5.0dip"
+                n1:layout_weight="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:id="@id/pop_inapp_item_selet_layer"
+            n1:paddingTop="25.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff4753ab"
+                n1:gravity="center"
+                n1:id="@id/pop_inapp_select_item"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:text="" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff4753ab"
+                n1:gravity="center"
+                n1:id="@id/pop_inapp_select_desc"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip"
+                n1:text="아이템을 구매하시겠습니까?" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/pop_inapp_item_buy_layer"
+        n1:background="@drawable/bg_bottom"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip">
+
+        <TextView
+            n1:textSize="18.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff101010"
+            n1:gravity="center"
+            n1:id="@id/pop_inapp_item_buy"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:text="구매하기" />
+    </LinearLayout>
+</LinearLayout>

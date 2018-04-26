@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:id="@id/fragment_crystal_control"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@drawable/fragment_crystal_bg"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            n1:id="@id/layout_crystal_control_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="2.0">
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_title_diamond"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="15.0dip"
+                n1:src="@drawable/fragment_crystal_diamond"
+                n1:layout_centerVertical="true" />
+
+            <TextView
+                n1:textSize="18.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:id="@id/layout_crystal_control_title_text_have_crystal1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="보유보석 : "
+                n1:layout_toRightOf="@id/layout_crystal_control_title_diamond"
+                n1:layout_centerVertical="true" />
+
+            <TextView
+                n1:textSize="18.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffff0000"
+                n1:id="@id/layout_crystal_control_title_text_have_crystal2"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="100"
+                n1:layout_toRightOf="@id/layout_crystal_control_title_text_have_crystal1"
+                n1:layout_centerVertical="true" />
+
+            <TextView
+                n1:textSize="18.0sp"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:id="@id/layout_crystal_control_title_text_have_crystal3"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="2.0dip"
+                n1:text="개"
+                n1:layout_toRightOf="@id/layout_crystal_control_title_text_have_crystal2"
+                n1:layout_centerVertical="true" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_title_btn_buy"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginTop="1.0dip"
+                n1:src="@drawable/fragment_crystal_buy_selector"
+                n1:layout_toRightOf="@id/layout_crystal_control_title_text_have_crystal3"
+                n1:layout_centerVertical="true" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_title_btn_close"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="15.0dip"
+                n1:src="@drawable/fragment_crystal_close_selector"
+                n1:layout_alignParentRight="true"
+                n1:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="4.0">
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_items_btn_item1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_crystal_menu_item1_selector"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_items_btn_item2"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_crystal_menu_item2_selector"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_items_btn_item3"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_crystal_menu_item3_selector"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_items_btn_item4"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_crystal_menu_item4_selector"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:id="@id/layout_crystal_control_items_btn_item5"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/fragment_crystal_menu_item5_selector"
+                n1:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

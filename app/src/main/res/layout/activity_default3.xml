@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:id="@id/linearLayout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="45.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:background="#fff2f2f2"
+        n1:orientation="horizontal"
+        n1:visibility="visible">
+
+        <TextView
+            n1:id="@id/picker_close"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="center"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Cancel"
+            n1:textColor="#ff3a3a3a"
+            n1:textSize="15.0dip"
+            n1:textStyle="bold" />
+
+        <TextView
+            n1:id="@id/picker_edit"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="center"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Edit"
+            n1:textColor="#ff3a3a3a"
+            n1:textSize="15.0dip"
+            n1:textStyle="bold" />
+
+        <TextView
+            n1:id="@id/picker_btn_ok"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="center"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Register"
+            n1:textColor="#ff3a3a3a"
+            n1:textSize="15.0dip"
+            n1:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        n1:id="@id/picker_grid"
+        n1:background="#ff181819"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/linearLayout"
+        n1:layout_alignParentLeft="true" />
+</RelativeLayout>

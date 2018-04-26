@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        n1:textAppearance="@android:style/TextAppearance.Medium"
+        n1:id="@id/text"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="@dimen/color_picker_gradient_margin"
+        n1:layout_marginRight="@dimen/color_picker_gradient_margin"
+        n1:textIsSelectable="false" />
+
+    <FrameLayout
+        n1:id="@id/gradient_border"
+        n1:background="@drawable/color_picker_border"
+        n1:padding="1.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip"
+        n1:layout_marginLeft="@dimen/color_picker_gradient_margin"
+        n1:layout_marginTop="3.0dip"
+        n1:layout_marginRight="@dimen/color_picker_gradient_margin"
+        n1:layout_below="@id/text">
+
+        <View
+            n1:id="@id/gradient"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <SeekBar
+        n1:id="@id/seek_bar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="75.0dip"
+        n1:progressDrawable="@android:color/transparent"
+        n1:thumb="@drawable/color_picker_advanced_select_handle"
+        n1:layout_below="@id/text"
+        n1:translationY="25.0dip" />
+</RelativeLayout>

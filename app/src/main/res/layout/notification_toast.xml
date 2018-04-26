@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="center"
+    n1:orientation="horizontal"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:weightSum="1.0"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:layout_gravity="center"
+        n1:orientation="horizontal"
+        n1:id="@id/notia_layout"
+        n1:background="@drawable/popup_message_box1"
+        n1:layout_width="300.0dip"
+        n1:layout_height="wrap_content"
+        n1:baselineAligned="false">
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="10.0dip"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_marginRight="7.0dip"
+            n1:layout_marginBottom="15.0dip">
+
+            <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/notia_picture"
+                n1:layout_width="50.0dip"
+                n1:layout_height="50.0dip"
+                n1:src="@drawable/popup_message_thum_def_female"
+                n2:poly_border="false"
+                n2:poly_corner_radius="25.0"
+                n2:poly_rotation_angle="0.0"
+                n2:poly_shadow="false"
+                n2:poly_vertices="0"
+                xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="10.0dip"
+            n1:layout_marginBottom="10.0dip"
+            n1:layout_weight="0.9">
+
+            <LinearLayout
+                n1:gravity="center"
+                n1:orientation="horizontal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:weightSum="1.0">
+
+                <LinearLayout
+                    n1:orientation="horizontal"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="wrap_content"
+                    n1:layout_weight="0.9">
+
+                    <TextView
+                        n1:textSize="18.0dip"
+                        n1:textColor="#ffdfe1e9"
+                        n1:id="@id/notia_senderid"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginRight="5.0dip"
+                        n1:text="6년째 돌싱" />
+
+                    <ImageView
+                        n1:gravity="center"
+                        n1:id="@id/notia_sender_secret"
+                        n1:visibility="invisible"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:src="@drawable/badge" />
+                </LinearLayout>
+
+                <ImageView
+                    n1:layout_width="38.0dip"
+                    n1:layout_height="38.0dip"
+                    n1:src="@drawable/popup_message_logo1" />
+            </LinearLayout>
+
+            <ImageView
+                n1:id="@id/notia_descimage"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/btn_jump_up" />
+
+            <TextView
+                n1:textSize="15.0dip"
+                n1:textColor="#ffdfe1e9"
+                n1:ellipsize="end"
+                n1:id="@id/notia_desc"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="5.0dip"
+                n1:text="오늘저녁 "
+                n1:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

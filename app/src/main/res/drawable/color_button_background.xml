@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:left="0.0dip"
+        n1:top="0.0dip"
+        n1:right="0.0dip"
+        n1:bottom="0.0dip"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/color_picker_border_color" />
+        </shape>
+    </item>
+    <item n2:left="1.0px"
+        n2:top="0.0px"
+        n2:right="1.0px"
+        n2:bottom="0.0px"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <solid n2:color="@color/color_picker_background_color" />
+        </shape>
+    </item>
+    <item n3:id="@id/color_button_swatch"
+        n3:left="2.0px"
+        n3:top="1.0px"
+        n3:right="2.0px"
+        n3:bottom="1.0px"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape n3:shape="rectangle">
+            <solid n3:color="#ffff0000" />
+        </shape>
+    </item>
+</layer-list>

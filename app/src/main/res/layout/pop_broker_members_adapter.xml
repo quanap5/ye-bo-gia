@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal"
+    n1:background="#ffffffff"
+    n1:layout_width="fill_parent"
+    n1:layout_height="57.0dip"
+    n1:weightSum="100.0"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/pop_brokers_adp_image"
+        n1:paddingLeft="18.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginBottom="8.0dip">
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <com.jhproject.library.polygonimageview.PolygonImageView n1:id="@id/pop_brokers_adp_picture"
+                n1:layout_width="36.0dip"
+                n1:layout_height="36.0dip"
+                n1:src="@drawable/chat_avatar_default_male"
+                n1:layout_centerInParent="true"
+                n2:poly_border="true"
+                n2:poly_border_color="#ff949494"
+                n2:poly_border_width="1.0dip"
+                n2:poly_corner_radius="25.0"
+                n2:poly_rotation_angle="0.0"
+                n2:poly_shadow="false"
+                n2:poly_shadow_color="#ffff0011"
+                n2:poly_vertices="0"
+                xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+            <ImageView
+                n1:id="@id/pop_brokers_adp_type"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/chat_matchmaking_mark1"
+                n1:layout_alignParentBottom="true"
+                n1:layout_centerHorizontal="true"
+                n1:contentDescription="@string/desc_image" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="vertical"
+        n1:id="@id/pop_brokers_adp_info"
+        n1:paddingLeft="6.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="99.0">
+
+        <TextView
+            n1:textSize="15.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff19a1d1"
+            n1:id="@id/pop_brokers_adp_info_nick"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="닉네임" />
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+
+            <TextView
+                n1:textSize="14.0dip"
+                n1:textColor="#ff2d3038"
+                n1:id="@id/pop_brokers_adp_info_info"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="이름/남/나이" />
+
+            <TextView
+                n1:textSize="12.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff44485d"
+                n1:id="@id/pop_brokers_adp_info_area"
+                n1:background="@drawable/chat_matchmaking_livein_box"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="지역" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/pop_brokers_adp_selector"
+        n1:layout_width="25.0dip"
+        n1:layout_height="25.0dip"
+        n1:layout_marginRight="18.0dip">
+
+        <ImageView
+            n1:id="@id/pop_brokers_adp_select"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/chat_check_in_chkbox_unselect" />
+    </LinearLayout>
+</LinearLayout>

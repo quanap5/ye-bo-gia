@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/main_bg_layer"
+        n1:background="@drawable/bg_ly"
+        n1:layout_width="fill_parent"
+        n1:layout_height="370.0dip">
+
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="60.0dip">
+
+            <TextView
+                n1:textSize="25.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff000000"
+                n1:gravity="center"
+                n1:layout_gravity="bottom|center"
+                n1:id="@id/comm_time"
+                n1:layout_width="0.0dip"
+                n1:layout_height="34.0dip"
+                n1:layout_marginLeft="50.0dip"
+                n1:text="0분 0초"
+                n1:layout_weight="1.0" />
+
+            <ImageView
+                n1:gravity="right"
+                n1:layout_gravity="right"
+                n1:id="@id/comm_close"
+                n1:layout_width="50.0dip"
+                n1:layout_height="50.0dip"
+                n1:src="@drawable/lybtn_clse" />
+        </LinearLayout>
+
+        <TextView
+            n1:textSize="16.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff5d5d5d"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/comm_comment1"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="5.0dip"
+            n1:text="마이크 이미지를 터치하시면\n녹음이 시작됩니다."
+            n1:maxLines="2" />
+
+        <TextView
+            n1:textSize="14.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ffa83d3d"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/comm_comment3"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="예쁜 목소리로 본인소개를 등록해 주세요" />
+
+        <TextView
+            n1:textSize="14.0dip"
+            n1:textStyle="bold"
+            n1:textColor="#ff9c9c9c"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/record_comment2"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="(※ 최대 3분까지 녹음 가능)" />
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:id="@id/recordLayout1"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginTop="2.0dip"
+            n1:layout_weight="1.0">
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/record_start"
+                n1:layout_width="79.0dip"
+                n1:layout_height="79.0dip"
+                n1:layout_marginTop="4.0dip"
+                n1:src="@drawable/xml_btn_record" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:id="@id/recordingLayout1"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginTop="2.0dip"
+            n1:layout_weight="1.0">
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_stop"
+                n1:layout_width="79.0dip"
+                n1:layout_height="79.0dip"
+                n1:layout_marginTop="4.0dip"
+                n1:src="@drawable/xml_btn_stop" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:id="@id/playLayout1"
+            n1:visibility="visible"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginTop="2.0dip"
+            n1:layout_weight="1.0">
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/play_play"
+                n1:layout_width="79.0dip"
+                n1:layout_height="79.0dip"
+                n1:layout_marginTop="4.0dip"
+                n1:src="@drawable/xml_btn_play" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/play_stop"
+                n1:visibility="gone"
+                n1:layout_width="79.0dip"
+                n1:layout_height="79.0dip"
+                n1:layout_marginTop="4.0dip"
+                n1:src="@drawable/xml_btn_stop" />
+
+            <TextView
+                n1:textSize="16.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ff6d6d6d"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/play_comment"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="10.0dip"
+                n1:text="녹음듣기" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="bottom|center"
+            n1:layout_gravity="bottom|center"
+            n1:orientation="horizontal"
+            n1:id="@id/recording_mic_layout"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="53.0dip"
+            n1:layout_marginBottom="25.0dip">
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_mic"
+                n1:layout_width="27.0dip"
+                n1:layout_height="26.0dip"
+                n1:src="@drawable/volume" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol1"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol2"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol3"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol4"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol5"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol6"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol7"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol8"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol9"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/recording_vol10"
+                n1:layout_width="8.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="9.0dip"
+                n1:src="@drawable/bar_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:gravity="bottom|center"
+            n1:layout_gravity="bottom|center"
+            n1:orientation="horizontal"
+            n1:id="@id/play_btn_layer"
+            n1:layout_width="fill_parent"
+            n1:layout_height="56.0dip">
+
+            <TextView
+                n1:textSize="16.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/play_rerecord"
+                n1:background="@drawable/bg_remk"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:text="다시녹음"
+                n1:layout_weight="1.0" />
+
+            <TextView
+                n1:textSize="16.0dip"
+                n1:textStyle="bold"
+                n1:textColor="#ffffffff"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/play_confirm"
+                n1:background="@drawable/bg_regist"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:text="등록하기"
+                n1:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

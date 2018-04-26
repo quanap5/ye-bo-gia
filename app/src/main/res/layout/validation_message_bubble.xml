@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/bubble"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:id="@id/top_view"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:weightSum="1.0"
+        n1:layout_alignLeft="@id/icon_view"
+        n1:layout_alignRight="@id/text_wrapper">
+
+        <View
+            n1:visibility="invisible"
+            n1:layout_width="0.0dip"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="0.25" />
+
+        <ImageView
+            n1:id="@id/arrow_image"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="7.0dip"
+            n1:src="@drawable/bubble_arrow_up"
+            n1:contentDescription="@null" />
+    </LinearLayout>
+
+    <ImageView
+        n1:id="@id/icon_view"
+        n1:layout_width="19.0dip"
+        n1:layout_height="19.0dip"
+        n1:layout_marginRight="8.0dip"
+        n1:src="@drawable/ic_warning"
+        n1:layout_below="@id/top_view"
+        n1:layout_alignParentLeft="true"
+        n1:contentDescription="@null" />
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/text_wrapper"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_toRightOf="@id/icon_view"
+        n1:layout_below="@id/top_view">
+
+        <TextView
+            n1:textSize="16.0sp"
+            n1:textColor="@android:color/black"
+            n1:id="@id/main_text"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxWidth="300.0dip" />
+
+        <TextView
+            n1:textSize="13.0sp"
+            n1:textColor="#ff444444"
+            n1:id="@id/sub_text"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxWidth="300.0dip" />
+    </LinearLayout>
+</RelativeLayout>

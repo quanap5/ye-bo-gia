@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.view.ViewPager
+        n1:id="@id/pager_intro"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/layout_indicator"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:weightSum="1.0">
+
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="0.8" />
+
+        <!--<com.jhproject.library.viewpageidicator.CirclePageIndicator-->
+            <!--n1:id="@id/page_intro_indicator"-->
+            <!--n1:padding="10.0dip"-->
+            <!--n1:layout_width="fill_parent"-->
+            <!--n1:layout_height="wrap_content"-->
+            <!--n1:layout_above="@id/layout_intro"-->
+            <!--n1:layout_alignParentLeft="true" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_intro"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true">
+
+        <Button
+            n1:enabled="false"
+            n1:textSize="21.0dip"
+            n1:textColor="@drawable/btn_pager_text_selector"
+            n1:id="@id/btn_intro_login"
+            n1:background="@drawable/btn_pager_selector"
+            n1:layout_width="0.0dip"
+            n1:layout_height="60.0dip"
+            n1:text="@string/login"
+            n1:layout_weight="0.5"
+            n1:layout_alignParentBottom="true" />
+
+        <ImageView
+            n1:id="@id/img_between"
+            n1:layout_width="1.0dip"
+            n1:layout_height="60.0dip"
+            n1:src="@drawable/intro_img_line_betweenbtns" />
+
+        <Button
+            n1:enabled="false"
+            n1:textSize="21.0dip"
+            n1:textColor="@drawable/btn_pager_text_selector"
+            n1:id="@id/btn_intro_joinus"
+            n1:background="@drawable/btn_pager_selector"
+            n1:layout_width="0.0dip"
+            n1:layout_height="60.0dip"
+            n1:text="Register"
+            n1:layout_weight="0.5"
+            n1:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>
